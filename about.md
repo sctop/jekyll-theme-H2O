@@ -6,6 +6,10 @@ description: 不要放弃任何的创新
 
 {% include header.html %}
 
+<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
+	<h2>关于我</h2>
+</div>
+
 <center>
     <p><img src="https://gss0.baidu.com/7Ls0a8Sm2Q5IlBGlnYG/sys/portraitl/item/382673a0?t=1491883856" align="center"></p>
 </center>
