@@ -1,55 +1,72 @@
+# 此页内容已被童年是个风筝（sctop）更新过
+# 原内容请自行fork原项目：https://github.com/kaeyleo/jekyll-theme-H2O
 # Site settings 配置站点
-title: '廖柯宇的独立博客'
-description: '昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
-keyword: '廖柯宇, 廖柯宇的独立博客, 廖柯宇的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
-url: 'http://liaokeyu.com' # your host
+title: '童年是个风筝的博客'
+description: '小名宝仔，Scratch语言爱好者，五年级小学狗一名。现在致力于管理网站和写博客文章。'
+keyword: '童年是个风筝, 童年是个风筝的博客, '
+url: 'http://www.cnfast.top/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
 
-# Navigation links
+# Navigation links  导航链接
 nav:
   home: '/'
+  about: '/about'
+  milestone: '/milestone'
   tags: '/tags.html'
+  VistalStudio: '/VisualStudio2017'
+  cloud: '/cloud'
+  RSS: '/feed.xml'
 
 # Author 配置博主信息
-author: '廖柯宇'
-nickname: '悟空'
-bio: '前端开发者，热爱技术&设计，简单乐观爱创造'
+# author真名 nickname小名 bio简介 avatar头像
+author: '张颀润'
+nickname: '宝仔'
+bio: '小学狗一名，热爱写博客&搞东西。爱PR，爱Scratch，爱b站和many things.'
 avatar: '/assets/img/profile.png'
 
-# Search
+
+# Search  搜索
 search: true
 
-# Night mode
+# Night mode  夜间模式
 nightMode: true
 
-# Comments
+# Comments  评论（disqus，需要翻墙）
+# disqus开启关闭 disqus_url评论js地址
 disqus: false
-disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+disqus_url: ''
 
-# Share
+# Share  分享
+# 第一个是是否开启，第二个是分享的渠道
 social-share: true
 social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
 
 # theme color 主题皮肤
-theme-color: 'default'  # pink or default
+theme-color: 'default'  # pink or default  粉色或者默认（蓝色）
 
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+# 文章底纹（当文章没有底纹图片时），中英文对照：
+# circuitBoard 电路
+# overlappingCircles 圆环
+# food 吃货日常：肯打鸡
+# glamorous 土豪必备：钻石
+# ticTacToe 圈圈叉叉
+# seaOfClouds 中国风：云海
+# 默认为ciruitBoard
 postPatterns: 'circuitBoard'
 
 # SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  weibo: '//weibo.com/lovecolcol'
-  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-  instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/kaeyleo'
+  github: '//github.com/sctop'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
 recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
-# Build settings
+# Build settings  生成设置
+# paginate 每一页显示的文章个数  paginate_path 设置文章每一页显示的个数  exclude 不生成的文件/文件夹，需要绝对路径，文件夹直接写文件夹名字，文件名需带后缀
 paginate: 6
 paginate_path: 'page:num'
 exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
@@ -60,7 +77,7 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-RSS: false
+RSS: true
 
 # Plugins
 gems: [jekyll-paginate]
