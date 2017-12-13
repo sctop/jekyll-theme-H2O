@@ -12,11 +12,12 @@ baseurl: ''
 # Navigation links  导航链接
 nav:
   home: '/'
-  about: '/about'
-  milestone: '/milestone'
+  about: '/about.html'
+  milestone: '/milestone.html'
   tags: '/tags.html'
-  VistalStudio: '/VisualStudio2017'
-  cloud: '/cloud'
+  VistalStudio: '/VisualStudio2017.html'
+  cloud: '/cloud.html'
+  updatelog: '/UpdateLog.html'
   RSS: '/feed.xml'
 
 # Author 配置博主信息

@@ -1,0 +1,26 @@
+---
+layout: default
+home-title: 更新日志
+description: 博客系统的日志
+---
+
+{% include header.html %}
+
+<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
+    <h2>{{ page.home-title }}</h2>
+    <h3>{{ page.description }}</h3>
+    {% if page.header-img %}
+    <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
+    {% endif %}
+</div>
+
+<main class="g-container home-content">
+	<h1>更新日志（自更新博客）</h1>
+	<p>2017/12/10 fork内容并测试完成</p>
+	<p>2017/12/10 设置博客</p>
+	<p>2017/12/12 博客设置完成，同时拿到了west.cn的十五周年庆抽奖礼品:)！</p>
+	<p>2017/12/12 博客上传，并发现错误，原因是网页不能直接用Markdown写，必须用html（文章除外）</p>
+	<p>2017/12/13 修正错误。</p>
+</main>
+
+{% include footer.html %}
