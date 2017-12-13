@@ -22,7 +22,7 @@ nav:
 author: '张颀润'
 nickname: '宝仔'
 bio: '小学狗一名，热爱写博客&搞东西。爱PR，爱Scratch，爱b站和many things.'
-avatar: '/assets/img/profile.png'
+avatar: '/assets/img/profile.jpg'
 
 
 # Search  搜索
@@ -79,3 +79,8 @@ RSS: true
 
 # Plugins
 gems: [jekyll-paginate]
+
+# 统计（童年是个风筝添加）
+# baidutongji百度统计代码js网址（hm.src片段）
+baidutj: 'https://hm.baidu.com/hm.js?465c1175cbb6674a2f1574f9cc6d4042'
+bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB'
