@@ -84,3 +84,4 @@ gems: [jekyll-paginate]
 # baidutongji百度统计代码js网址（hm.src片段）
 baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073'
 bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB'
+360zzpt: 'e48fdf9149fc8979dcc34b91fa988767'
