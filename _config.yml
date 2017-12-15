@@ -85,3 +85,5 @@ baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # baiduto
 bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # bingtj必应网站管理（content片段）
 360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 360zzpt为360站长平台（content片段）
 baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台
+360wzaqwzyz: 'http://webscan.360.cn/index/checkwebsite/url/www.zhangqirun.cn' # 360网站安全网站验证（大图标）
+# P.s 360网站安全网站验证即为显示360网站安全的标志，用户点击后即可看到部分安全报告
