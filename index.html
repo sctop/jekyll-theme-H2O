@@ -90,6 +90,15 @@ description: zhangqirun.cn，更易识别，权重更高
                 {% endfor %}
             </section>
             {% endif %}
+            
+            {% if site.link %}
+            <section class="tags-card">
+                <div class="link-title">友情链接</div>
+                <a href="http://likebuying.top/" class="tag">空白代刷站</a>
+                <a href="https://www.cloudflare.com/" class="tag">Cloudflare云服务CDN</a>
+            </section>
+            {% endif %}
+            
         </div>
 
         {% if site.search %}
@@ -100,13 +109,6 @@ description: zhangqirun.cn，更易识别，权重更高
         </div>
         {% endif %}
         
-        {% if site.link %}
-        <section class="tags-card">
-            <div class="link-title">友情链接</div>
-            <a href="http://likebuying.top/" class="tag">空白代刷站</a>
-            <a href="https://www.cloudflare.com/" class="tag">Cloudflare云服务CDN</a>
-        </section>
-        {% endif %}
 
 </main>
 
