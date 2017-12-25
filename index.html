@@ -82,6 +82,7 @@ description: zhangqirun.cn，更易识别，权重更高
 
             {% if site.recommend-tags and site.tags.size>0 %}
             <section class="tags-card">
+                <div class="title">Tags</div>
                 {% for tag in site.tags %}
                     {% if forloop.index > site.recommend-condition-size %}
                         {% break %}
@@ -90,6 +91,16 @@ description: zhangqirun.cn，更易识别，权重更高
                 {% endfor %}
             </section>
             {% endif %}
+            
+            {% if site.link %}
+            <section class="tags-card">
+                <div class="link-title">友情链接</div>
+                <a target="_blank" href="http://likebuying.top/" class="tag">空白代刷站</a>
+                <a target="_blank" href="https://www.cloudflare.com/" class="tag">Cloudflare云服务CDN</a>
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2094880085&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2094880085:51" alt="联系我们添加友情链接" title="联系我们添加友情链接"/></a>
+            </section>
+            {% endif %}
+            
         </div>
 
         {% if site.search %}
@@ -99,8 +110,7 @@ description: zhangqirun.cn，更易识别，权重更高
             <div class="search_result"></div>
         </div>
         {% endif %}
-
-    </aside>
+        
 
 </main>
 
