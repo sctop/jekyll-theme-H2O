@@ -92,14 +92,20 @@ description: zhangqirun.cn，更易识别，权重更高
             {% if site.link %}
             <section class="tags-card">
 				<div class="link-title">友情链接</div>
-				{% for i in site.links %}
-				<a target="_blank" href="{{ i[1] }}" class="tag">{{ i[0] }}</a>
-				{% endif %}
-				<div class="link-mowei">联系我们：</div>
+				{% for link in site.links %}
+				<a target="_blank" href="{{ link[1] }}" class="tag">{{ link[0] }}</a>
+				{% endfor %}
+				<div class="link-mowei">联系我们以添加友情链接：</div>
 				<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2094880085&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2094880085:51" alt="联系我们添加友情链接" title="联系我们添加友情链接"/></a>
             </section>
             {% endif %}
-            
+			
+			{% if site.shownewposts %}
+			<section class="newposts">
+				{% for postsshow=0 to {{ site.newpostsnum }} %}
+				<p><img src="/assets/icons/newposts.jpg"  alt="{{ postsshow.title }}" /><a class="show-newposts" href="{{ postsshow.url }}" title="{{ postsshow.title }}"></a></p>
+				{% endif %}
+		   </section>
         </div>
 
         {% if site.search %}

@@ -60,8 +60,12 @@ sns:
   github: '//github.com/sctop'
 
 # Tags 设置标签
-recommend-tags: true # whether or not display recommend-tags on the sidebar
-recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+# whether or not display recommend-tags on the sidebar
+# 是否在侧边栏上显示标签
+recommend-tags: true
+# a tag will be recommended if the size of it is more than this value
+# 如果标签的大小大于此值，则建议使用该标记。
+recommend-condition-size: 12
 
 # Build settings  生成设置
 # paginate 每一页显示的文章个数  paginate_path 设置文章每一页显示的个数  exclude 不生成的文件/文件夹，需要绝对路径，文件夹直接写文件夹名字，文件名需带后缀
@@ -100,3 +104,6 @@ baidusszyptautolink: 'true' # 百度搜索资源平台自动提交链接是否�
 links:
   空白代刷站: 'http://likebuying.top/'
   Cloudflare云服务: 'https://www.cloudflare.com/'
+# 新文章显示设置
+shownewposts: 'true' # 显示新文章？
+newpostsnum: '' # 新文章的数量
