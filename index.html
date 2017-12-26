@@ -100,12 +100,6 @@ description: zhangqirun.cn，更易识别，权重更高
             </section>
             {% endif %}
 			
-			{% if site.shownewposts %}
-			<section class="newposts">
-				{% for postsshow=0 to {{ site.newpostsnum }} %}
-				<p><img src="/assets/icons/newposts.jpg"  alt="{{ postsshow.title }}" /><a class="show-newposts" href="{{ postsshow.url }}" title="{{ postsshow.title }}"></a></p>
-				{% endif %}
-		   </section>
         </div>
 
         {% if site.search %}
