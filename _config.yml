@@ -106,4 +106,4 @@ links:
   Cloudflare云服务: 'https://www.cloudflare.com/'
 # 新文章显示设置
 shownewposts: 'true' # 显示新文章？
-newpostsnum: '' # 新文章的数量
+newpostsnum: '3' # 新文章的数量
