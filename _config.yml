@@ -104,6 +104,3 @@ baidusszyptautolink: 'true' # 百度搜索资源平台自动提交链接是否�
 links:
   空白代刷站: 'http://likebuying.top/'
   Cloudflare云服务: 'https://www.cloudflare.com/'
-# 新文章显示设置
-shownewposts: 'true' # 显示新文章？
-newpostsnum: '3' # 新文章的数量
