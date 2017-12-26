@@ -96,9 +96,12 @@ bingtjopen: 'true' # 必应网站管理是否启用
 bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段）
 
 baidusszyptautolink: 'true' # 百度搜索资源平台自动提交链接是否开启
+baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台验证
 
 360webscanopen: 'big' # 360网站安全是否打开（big表示大图标，small表示小图标，false表示不开启）
 360webscanurl: 'zhangqirun.cn' # 要检测的网址
+
+360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 360zzpt为360站长平台（content片段）
 
 # 友情链接
 links:
