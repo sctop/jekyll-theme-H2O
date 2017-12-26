@@ -16,7 +16,6 @@ nav:
   tags: '/tags.html'
   VistalStudio: '/VisualStudio2017.html'
   updatelog: '/UpdateLog.html'
-  RSS: '/feed.xml'
 
 # Author 配置博主信息
 # author真名 nickname小名 bio简介 avatar头像
@@ -76,13 +75,28 @@ highlighter: rouge
 kramdown:
   input: GFM
 
+# RSS订阅
 RSS: true
 
 # Plugins
 gems: [jekyll-paginate]
 
-# 统计&管理网站（童年是个风筝添加）
-baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # baidutongji百度统计代码js网址（hm.src片段）
-bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # bingtj必应网站管理（content片段）
-360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 360zzpt为360站长平台（content片段）
-baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台
+# 童年是个风筝添加内容：
+
+# 网站管理&统计
+# ture一律启用，false一律关闭
+baidutjopen: 'true' # 百度统计代码是否启用
+baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # 百度统计代码js网址（hm.src片段）
+
+bingtjopen: 'true' # 必应网站管理是否启用
+bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段）
+
+baidusszyptautolink: 'true' # 百度搜索资源平台自动提交链接是否开启
+
+360webscanopen: 'big' # 360网站安全是否打开（big表示大图标，small表示小图标，false表示不开启）
+360webscanurl: 'zhangqirun.cn' # 要检测的网址
+
+# 友情链接
+links:
+  空白代刷站: 'http://likebuying.top/'
+  Cloudflare云服务: 'https://www.cloudflare.com/'

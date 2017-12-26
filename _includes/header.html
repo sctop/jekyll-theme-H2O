@@ -5,9 +5,13 @@
     <i id="menu-toggle" class="iconfont icon-menu"></i>
     <nav class="g-nav">
         <ul>
+			<!-- <li><a href="网址">显示名称</a></li> -->
             {% for i in site.nav %}
             <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
-            {% endfor %}
+            {% endif %}
+			{% if site.RSS %}
+			<li><a href="/feed.xml">RSS</a></li>
+			{% endif %}
         </ul>
     </nav>
 </header>
