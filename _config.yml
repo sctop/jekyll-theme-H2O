@@ -16,7 +16,9 @@ nav:
   tags: '/tags.html'
   VistalStudio: '/VisualStudio2017.html'
   updatelog: '/UpdateLog.html'
-  RSS: '/feed.xml'
+  
+# RSS订阅
+RSS: true
 
 # Author 配置博主信息
 # author真名 nickname小名 bio简介 avatar头像
@@ -24,7 +26,6 @@ author: '张颀润'
 nickname: '宝仔'
 bio: '广东省河源市第一小学五年级的小学狗一名，热爱写博客&搞东西。爱PR，爱Scratch，爱b站和many things。现在致力于管理网站和写博客文章，对大千世界有着自己的见解。同学们中间的电脑高手（滑稽）。'
 avatar: '/assets/img/profile.jpg'
-
 
 # Search  搜索
 search: true
@@ -76,13 +77,26 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-RSS: true
-
 # Plugins
 gems: [jekyll-paginate]
 
-# 统计&管理网站（童年是个风筝添加）
-baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # baidutongji百度统计代码js网址（hm.src片段）
-bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # bingtj必应网站管理（content片段）
-360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 360zzpt为360站长平台（content片段）
-baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台
+# 以下内容为童年是个风筝添加
+# 统计&管理网站
+baidutjopen: 'true' # 百度统计是否开启
+baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # b百度统计代码js网址（hm.src片段）
+
+bingtj: 'true' # 必应网站管理是否开启
+bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段）
+
+360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 为360站长平台（content片段），验证用
+baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台验证，验证用
+
+# 友情链接
+yqlj:
+  空白代刷站: 'http://likebuying.top/'
+  空白君的博客: 'http://kbboke.xyz/'
+  CloudFlare云服务: 'https://www.cloudflare.com/'
+links_mp: '' # 联系手机号
+links_p: '' # 联系座机
+links_qq: '2094880085' # 联系QQ
+links_mail: '2094880085@qq.com' # 联系邮箱
