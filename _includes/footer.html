@@ -4,9 +4,9 @@
     <p>编译时间：{{ site.time }}</p>
     {% if site.360webscanopen %}
         {% if site.360webscanshowbig %}
-        <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.url }}"><img border="0" src="/assets/icons/360webscan.png"/></a>
+        <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan.png"/></a>
         {% else %}
-        <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.url }}"><img border="0" src="/assets/icons/360webscan-s.png"/></a>
+        <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan-s.png"/></a>
         {% endif %}
     {% endif %}
     <!--
