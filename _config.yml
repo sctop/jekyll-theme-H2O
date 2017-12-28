@@ -90,9 +90,11 @@ baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # b百度
 bingtj: 'true' # 必应网站管理是否开启
 bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段）
 
-360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 为360站长平台（content片段），验证用
 360webscanopen: 'true' # 360网站安全显示
 360webscanshowbig: 'true' # 360网站安全显示图标是否是大图标
+360scanurl: 'zhangqirun.cn' # 360网站安全检测的域名（不要带https://或http://，也不要带主机名）
+
+360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 为360站长平台（content片段），验证用
 baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台验证，验证用
 
 # 友情链接
