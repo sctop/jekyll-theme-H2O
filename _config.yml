@@ -109,7 +109,5 @@ links_mail: '2094880085@qq.com' # 联系邮箱
 360webscanshowbig: 'true' # 360网站安全显示图标是否是大图标
 360scanurl: 'zhangqirun.cn' # 360网站安全检测的域名（不要带https://或http://，也不要带主机名）
 bianyitime: 'true' # 是否显示编译时间
-showtime: 'true' # 是否显示访问网站时间
-showsystemtime: 'true' # 是否显示系统时间
 cnzzdata: 'true' # cnzz横排数据是否显示
 cnzzzxrs: 'true' # cnzz在线人数是否显示
