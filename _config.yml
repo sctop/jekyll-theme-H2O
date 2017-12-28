@@ -111,3 +111,5 @@ links_mail: '2094880085@qq.com' # 联系邮箱
 bianyitime: 'true' # 是否显示编译时间
 showtime: 'true' # 是否显示访问网站时间
 showsystemtime: 'true' # 是否显示系统时间
+cnzzdata: 'true' # cnzz横排数据是否显示
+cnzzzxrs: 'true' # cnzz在线人数是否显示
