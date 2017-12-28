@@ -4,6 +4,7 @@
     {% if site.bianyitime %}
     <p>编译时间：{{ site.time }}</p>
     {% endif %}
+    
     {% if site.showtime %}
      <script language=Javascript> 
         function time(){
@@ -18,6 +19,7 @@
         }
     </script>
     {% endif %}
+    
     {% if site.showsystemtime %}
      <script language=Javascript> 
         function time(){
@@ -34,6 +36,7 @@
         }
     </script>
     {% endif %}
+    
     {% if site.360webscanopen %}
         {% if site.360webscanshowbig %}
         <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan.png"/></a>
@@ -41,5 +44,6 @@
         <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan-s.png"/></a>
         {% endif %}
     {% endif %}
+    
     {% include site-other-afterhead.html %}
 </footer>
