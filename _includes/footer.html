@@ -2,10 +2,19 @@
     <section>{{ site.title }} © {{ site.time | date: '%Y' }}</section>
     <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
     <p>编译时间：{{ site.time }}</p>
+    {% if site.360webscanopen %}
+        {% if site.360webscanshowbig %}
+        <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.url }}"><img border="0" src="/assets/icons/360webscan.png"/></a>
+        {% else %}
+        <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.url }}"><img border="0" src="/assets/icons/360webscan-s.png"/></a>
+        {% endif %}
+    {% endif %}
+    <!--
     {% if site.360webscanopen==1 %}
     <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.url }}"><img border="0" src="/assets/icons/360webscan.png"/></a>
     {% endif %}
     {% if site.360webscanopen==0 %}
     <a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.url }}"><img border="0" src="/assets/icons/360webscan-s.png"/></a>
     {% endif %}
+    -->
 </footer>
