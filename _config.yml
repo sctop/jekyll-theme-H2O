@@ -115,5 +115,10 @@ links_mail: '2094880085@qq.com' # 联系邮箱
 360webscanopen: 'true' # 360网站安全显示
 360webscanshowbig: 'true' # 360网站安全显示图标是否是大图标
 360scanurl: 'zhangqirun.cn' # 360网站安全检测的域名（不要带https://或http://，也不要带主机名）
+# cnzz
 cnzzdata: 'true' # cnzz横排数据是否显示
+cnzzdatainfo: '<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>' # cnzz横排数据js代码
 cnzzzxrs: 'true' # cnzz在线人数是否显示
+cnzzzxrsinfo: '<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>' # cnzz在线人数js代码
+cnzztj: 'true' # cnzz统计是否显示（启用）
+cnzztjinfo: '<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>' # cnzz统计js代码
