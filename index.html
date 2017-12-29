@@ -1,14 +1,12 @@
 ---
 layout: default
-home-title: 童年是个风筝的博客
-description: zhangqirun.cn，更易识别，权重更高
 ---
 
 {% include header.html %}
 
 <div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
-    <h2>{{ page.home-title }}</h2>
-    <h3>{{ page.description }}</h3>
+    <h2>{{ site.home-title }}</h2>
+    <h3>{{ site.home-description }}</h3>
     {% if page.header-img %}
     <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
     {% endif %}
@@ -16,6 +14,7 @@ description: zhangqirun.cn，更易识别，权重更高
 
 <main class="g-container home-content">
     <div class="article-list">
+        <p>更新：博客更加好用！跨年专属更新！</p>
         {% for post in paginator.posts %}
             <article class="article-item">
                 {% if post.cover %}
