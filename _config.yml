@@ -9,12 +9,15 @@ url: 'http://www.zhangqirun.cn/' # your host
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
 
+# index 首页
+home-title: 童年是个风筝的博客
+description: zhangqirun.cn，更易识别，权重更高
+
 # Navigation links  导航链接
 nav:
   home: '/'
   tags: '/tags.html'
   VistalStudio: '/VisualStudio2017.html'
-  updatelog: '/UpdateLog.html'
   
 # RSS订阅
 RSS: true
@@ -85,6 +88,8 @@ timezone: Asia/Shanghai
 
 # 统计&管理网站
 # 以下内容全部依据字符量，以0为分界线
+beian: '' # （如果有）网站备案，强烈建议填写！！！！
+
 baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # 百度统计代码js网址（hm.src片段）
 
 bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段）
