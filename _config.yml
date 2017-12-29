@@ -86,6 +86,9 @@ gems: [jekyll-paginate]
 # 时区设定
 timezone: Asia/Shanghai
 
+# 强制限制
+encoding: UTF-8
+
 # 统计&管理网站
 # 以下内容全部依据字符量，以0为分界线
 beian: '' # （如果有）网站备案，强烈建议填写！！！！
