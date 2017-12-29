@@ -2,10 +2,11 @@
     <section>{{ site.title }} - {% if site.dbxsxx %}{{ site.home-description }}{% endif %} © 2017 - {{ site.time | date: '%Y' }}  {% if site.cnzztj %}<script src="https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809" language="JavaScript"></script>{% endif %}</section>
     <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | 编译时间：{{ site.time }} | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
     <section>
-     {% if site.cnzzzxrs %}
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>{% endif %}
      {% if site.cnzzdata %}
-     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+     {% endif %}
+     {% if site.cnzzzxrs %}
+     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
      {% endif %}
     </section>
     {% if site.360webscanopen %}
