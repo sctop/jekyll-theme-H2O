@@ -5,7 +5,6 @@ title: '童年是个风筝的博客'
 description: '小名宝仔，Scratch语言爱好者，河源市第一小学五年级小学狗一名。现在致力于管理网站和写博客文章。'  # 搜索引擎蜘蛛捕捉的内容
 keyword: '童年是个风筝, 童年是个风筝的博客, '
 url: 'http://www.zhangqirun.cn/' # your host
-link: true
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
@@ -100,6 +99,7 @@ yqlj:
   空白君的博客: 'http://kbboke.xyz/'
   CloudFlare云服务: 'https://www.cloudflare.com/'
 
+link: 'true' # 友情链接
 links_mp: '' # 联系手机号
 links_p: '' # 联系座机
 links_qq: '2094880085' # 联系QQ
