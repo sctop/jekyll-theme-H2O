@@ -84,7 +84,7 @@ gems: [jekyll-paginate]
 timezone: Asia/Shanghai
 
 # 统计&管理网站
-# 以下内容全部依据字符量，以1为分界线
+# 以下内容全部依据字符量，以0为分界线
 baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # 百度统计代码js网址（hm.src片段）
 
 bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段）
@@ -99,7 +99,8 @@ yqlj:
   空白君的博客: 'http://kbboke.xyz/'
   CloudFlare云服务: 'https://www.cloudflare.com/'
 
-link: 'true' # 友情链接
+# link：友情链接是否启用
+link: true
 links_mp: '' # 联系手机号
 links_p: '' # 联系座机
 links_qq: '2094880085' # 联系QQ
