@@ -1,7 +1,13 @@
 {% if site.cnzzdata %}
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+{% if site.cnzzdatainfo.size>0 %}
+<!--防止cnzz横排数据js代码没有填写-->
+{{ site.cnzzdatainfo }}
+{% endif %}
 {% endif %}
 
 {% if site.cnzzzxrs %}
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+{% if site.cnzzzxrsinfo.size>0 %}
+<!--防止cnzz在线人数js代码没有填写-->
+{{ site.cnzzzxrsinfo }}
+{% endif %}
 {% endif %}
