@@ -1,4 +1,4 @@
-{% if site.baidutjopen %}
+{% if site.baidutj>0 %}
 <!--BaiduTongji Code-->
 <script>
     var _hmt = _hmt || [];
@@ -10,12 +10,10 @@
     })();
 </script>
 {% endif %}
-
-{% if site.bingtjopen %}
+{% if site.bingtj.size>0 %}
 <!--BingWeb Code-->
 <meta name="msvalidate.01" content="{{ site.bingtj }}" />
 {% endif %}
-
 {% if site.baidusszyptautolink %}
 <!--Baidu link auto tuidong(http://ziyuan.baidu.com/)-->
 <script>
@@ -33,6 +31,12 @@
     })();
  </script>
 {% endif %}
-
+{% if site.360zzpt.size>0 %}
 <meta name="360-site-verification" content="{{ site.360zzpt }}" />
+{% endif %}
+{% if site.baisusszypt.size>0 %}
 <meta name="baidu-site-verification" content="{{ site.baidusszypt }}" />
+{% endif %}
+{% if site.baiduunion.size>0 %}
+<meta name="baidu_union_verify" content="{{ site.baiduunion }}">
+{% endif %}
