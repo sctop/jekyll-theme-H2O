@@ -125,4 +125,3 @@ cnzzdata: 'true' # cnzz横排数据是否显示
 cnzzzxrs: 'true' # cnzz在线人数是否显示
 cnzztj: 'true' # cnzz统计是否显示（启用）
 dbxsxx: 'true' # 底部是否显示简介
-dbxsname: 'true' # 底部是否显示你的个人基本信息
