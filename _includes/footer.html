@@ -1,4 +1,14 @@
 <footer class="g-footer">
+    <nav class="g-nav">
+        <ul>
+            {% for i in site.nav %}
+            <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+            {% endfor %}
+            {% if site.RSS %}
+            <li><a href="/feed.xml">RSS</a></li>
+            {% endif %}
+        </ul>
+    </nav>
     <section>{{ site.title }} - {% if site.dbxsxx %}{{ site.home-description }}{% endif %} © 2017 - {{ site.time | date: '%Y' }}  {% if site.cnzztj %}<script src="https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809" language="JavaScript"></script>{% endif %}</section>
     <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | 编译时间：{{ site.time }} | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
     <section>
