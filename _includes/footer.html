@@ -1,7 +1,11 @@
 <footer class="g-footer">
     <section>{{ site.title }} - {% if site.dbxsxx %}{{ site.home-description }}{% endif %} © 2017 - {{ site.time | date: '%Y' }}  {% if site.cnzztj %}<script src="https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809" language="JavaScript"></script>{% endif %}</section>
     {% if site.dbxsname %}
-    <section>博主简介：{{ site.author }}({{ site.nickname }})，今年{{ site.old }}。我是{{ site.bio }}很高兴在我的博客里认识你！</section>
+    <section>
+    博主简介：{{ site.author }}({{ site.nickname }})，今年{{ site.old }}岁。
+    我是{{ site.bio }}
+    很高兴在我的博客里认识你！
+    </section>
     {% endif %}
     <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | 编译时间：{{ site.time }} | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
     <section>
