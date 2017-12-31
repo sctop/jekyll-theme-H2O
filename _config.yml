@@ -3,7 +3,7 @@
 # Site settings 配置站点
 title: '童年是个风筝的博客'
 description: '小名宝仔，Scratch语言爱好者，河源市第一小学五年级小学狗一名。现在致力于管理网站和写博客文章。'  # 搜索引擎蜘蛛捕捉的内容
-keyword: '童年是个风筝, 童年是个风筝的博客, '
+keyword: '童年是个风筝, 童年是个风筝的博客, 张颀润'
 url: 'http://www.zhangqirun.cn/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
@@ -123,3 +123,4 @@ cnzzdata: 'true' # cnzz横排数据是否显示
 cnzzzxrs: 'true' # cnzz在线人数是否显示
 cnzztj: 'true' # cnzz统计是否显示（启用）
 dbxsxx: 'true' # 底部是否显示简介
+dbxsname: 'true' # 底部是否显示你的名字和小名
