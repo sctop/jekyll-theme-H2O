@@ -23,12 +23,13 @@ nav:
 RSS: true
 
 # Author 配置博主信息
-# author真名 nickname小名 bio简介 avatar头像 old年龄
+# author真名 nickname小名 bio简介 avatar头像 old年龄 from来自于哪里（最好写清楚省份城市）
 author: '张颀润'
 nickname: '宝仔'
 bio: '广东省河源市第一小学五年级的小学狗一名，热爱写博客&搞东西。爱PR，爱Scratch，爱b站和many things。现在致力于管理网站和写博客文章，对大千世界有着自己的见解。同学们中间的电脑高手（滑稽）。' # 会在底部显示简介，开头为“我是...”，请接一下地气。
 avatar: '/assets/img/profile.jpg'
 old: '11'
+from: '广东河源'
 
 # Search  搜索
 search: true
