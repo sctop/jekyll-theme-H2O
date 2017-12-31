@@ -2,7 +2,7 @@
     <nav class="g-nav">
         <ul>
             {% for i in site.nav %}
-            <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+            <li><a href="{{ i[1] }}">{{ i[0] }} | </a></li>
             {% endfor %}
             {% if site.RSS %}
             <li><a href="/feed.xml">RSS</a></li>
