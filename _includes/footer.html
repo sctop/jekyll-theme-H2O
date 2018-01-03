@@ -1,22 +1,25 @@
 <footer class="g-footer">
-    <section>{{ site.title }} - {% if site.dbxsxx %}{{ site.home-description }}{% endif %} © 2017 - {{ site.time | date: '%Y' }}  {% if site.cnzztj %}<script src="https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809" language="JavaScript"></script>{% endif %}</section>
+    <section>{{ site.title }} - {% if site.dbxsxx %}{{ site.home-description }}{% endif %} © 2017 - {{ site.time | date: '%Y' }}  {% if site.cnzztj %}<script src="{{ site.cnzztjjs }}" language="JavaScript"></script>{% endif %}</section>
     <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | 编译时间：{{ site.time }} | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
     <section>博主简介：{{ site.author }}({{ site.nickname }})，今年{{ site.old }}岁。来自{{ site.from }}。很高兴在我的博客里认识你！</section>
     <section>
     {% if site.cnzzdata %}
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>{% endif %}
+    <script type="text/javascript">var cnzz_protocol = {{ site.cnzzdatajs }};</script>{% endif %}
     {% if site.cnzzzxrs %}
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = {{ site.cnzzzxrsjs }};</script>
     {% endif %}
     </section>
     {% if site.360webscanopen %}
-        {% if site.360webscanshowbig %}
-        <section><a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan.png"/></a></section> 
-        {% else %}
-        <section><a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan-s.png"/></a></section>
-        {% endif %}
+		{% if site.360webscanurl.size > 0}
+			{% if site.360webscanshowbig %}
+			<section><a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan.png"/></a></section> 
+			{% else %}
+			<section><a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan-s.png"/></a></section>
+			{% endif %}
+		{% endif %}
     {% endif %}
     {% if site.beian.size>0 %}
-    <section><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=4xmhn4lQDU2xVw29NJuvpGRuFSYp6qMg6oeYuTKSosZhLnfnLaCU!1308741649">{{ site.beian }}</a></section>
+    <section><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=4xmhn4lQDU2xVw29NJuvpGRuFSYp6qMg6oeYuTKSosZhLnfnLaCU!1308741649">{{ site.ICP }}</a></section>
     {% endif %}
 </footer>
+
