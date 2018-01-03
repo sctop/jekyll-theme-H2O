@@ -122,6 +122,10 @@ links_mail: '2094880085@qq.com' # 联系邮箱
 360scanurl: 'zhangqirun.cn' # 360网站安全检测的域名（不要带https://或http://，也不要带主机名）
 # cnzz
 cnzzdata: 'true' # cnzz横排数据是否显示
+cnzzdatajs: '(("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D2' type='text/javascript'%3E%3C/script%3E"))' # cnzz横排数据cnzz_protocol片段，不要带空格（顶格）
 cnzzzxrs: 'true' # cnzz在线人数是否显示
+cnzzzxrsjs: '(("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271703809'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271703809%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"))' # cnzz在线人数js的cnzz_protocol片段，不要带空格（顶格）
 cnzztj: 'true' # cnzz统计是否显示（启用）
+cnzztjjs: 'https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809' # cnzz统计js的src片段
+
 dbxsxx: 'true' # 底部是否显示简介
