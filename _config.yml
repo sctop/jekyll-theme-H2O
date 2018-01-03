@@ -125,5 +125,5 @@ cnzzdata: 'true' # cnzz横排数据是否显示
 cnzzzxrs: 'true' # cnzz在线人数是否显示
 cnzztj: 'true' # cnzz统计是否显示（启用）
 cnzztjjs: 'https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809' # cnzz统计js的src片段
-
 dbxsxx: 'true' # 底部是否显示简介
+codeurl: 'https://github.com/sctop/sctop.github.io/'
