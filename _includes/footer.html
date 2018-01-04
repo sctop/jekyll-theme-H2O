@@ -13,6 +13,11 @@
     {% endif %}
     </section>
     {% endif %}
+    {% if site.ICP.size>0 %}
+    <section><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=4xmhn4lQDU2xVw29NJuvpGRuFSYp6qMg6oeYuTKSosZhLnfnLaCU!1308741649">{{ site.ICP }}</a></section>
+    {% else %}
+    <section>这个网站貌似没有备案哦~</section>
+    {% endif %}
     {% if site.360webscanopen %}
         {% if site.360webscanshowbig %}
         <section><a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan.png"/></a></section> 
@@ -20,9 +25,4 @@
         <section><a href="http://webscan.360.cn/index/checkwebsite/url/{{ site.360scanurl }}"><img border="0" src="/assets/icons/360webscan-s.png"/></a></section>
         {% endif %}
     {% endif %}
-    {% if site.ICP.size>0 %}
-    <section><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=4xmhn4lQDU2xVw29NJuvpGRuFSYp6qMg6oeYuTKSosZhLnfnLaCU!1308741649">{{ site.ICP }}</a></section>
-    {% else %}
-    <section>这个网站貌似没有备案哦~</section>
-    {% endif %}
 </footer>
