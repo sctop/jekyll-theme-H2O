@@ -26,5 +26,9 @@
     {% if site.baiduunion.size>0 %}
     <meta name="baidu_union_verify" content="{{ site.baiduunion }}">
     {% endif %}
+    {% if site.bingtj.size>0 %}
+    <!--BingWeb Code-->
+    <meta name="msvalidate.01" content="{{ site.bingtj }}" />
+    {% endif %}
     {% include site-other.html %}
 </head>
