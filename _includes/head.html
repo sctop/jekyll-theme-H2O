@@ -17,5 +17,14 @@
     <link rel="stylesheet" href="/assets/css/prism.css">
     <link rel="stylesheet" href="/assets/css/share.min.css">
     <link rel="stylesheet" href="/assets/css/app.min.css">
+    {% if site.360zzpt.size>0 %}
+    <meta name="360-site-verification" content="{{ site.360zzpt }}" />
+    {% endif %}
+    {% if site.baisusszypt.size>0 %}
+    <meta name="baidu-site-verification" content="{{ site.baidusszypt }}" />
+    {% endif %}
+    {% if site.baiduunion.size>0 %}
+    <meta name="baidu_union_verify" content="{{ site.baiduunion }}">
+    {% endif %}
     {% include site-other.html %}
 </head>
