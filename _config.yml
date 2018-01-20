@@ -1,5 +1,36 @@
 # 此页内容已被童年是个风筝（sctop）更新过
 # 原内容请自行fork原项目：https://github.com/kaeyleo/jekyll-theme-H2O
+
+# --------------------------------------------------------------------------
+# |文章底纹（当文章没有底纹图片时），中英文对照：                          |
+# |circuitBoard           电路                                             |
+# |overlappingCircles     圆环                                             |
+# |food                   吃货日常：肯打鸡                                 |
+# |glamorous              土豪必备：钻石                                   |
+# |ticTacToe              圈圈叉叉                                         |
+# |seaOfClouds            中国风：云海                                     |
+# |                   默认为ciruitBoard（电路）                            |
+# |                       配置：85行开始                                   |
+# --------------------------------------------------------------------------
+
+# -----------------------------------------
+# |配置社交网站url（中英文对照）:         |
+# |weibo     微博                         |
+# |zhihu     知乎                         |
+# |twitter   推特                         |
+# |instagram                              |
+# |juejin    掘金                         |
+# |github                                 |
+# |douban    豆瓣                         |
+# |facebook  脸书                         |
+# |dribble                                |
+# |uicn      UI中国                       |
+# |jianshu   简书                         |
+# |medium                                 |
+# |linkedin  领英                         |
+# |         配置：90行开始                |
+# -----------------------------------------
+
 # Site settings 配置站点
 title: '童年是个风筝的博客'
 description: '小名宝仔，Scratch语言爱好者，河源市第一小学五年级小学狗一名。现在致力于管理网站和写博客文章。'  # 搜索引擎蜘蛛捕捉的内容
@@ -26,7 +57,8 @@ RSS: true
 # author真名 nickname小名 bio简介 avatar头像 old年龄 from来自于哪里（最好写清楚省份城市）
 author: '张颀润'
 nickname: '宝仔'
-bio: '广东省河源市第一小学五年级的小学狗一名，热爱写博客&搞东西。爱PR，爱Scratch，爱b站和many things。现在致力于管理网站和写博客文章，对大千世界有着自己的见解。同学们中间的电脑高手（滑稽）。' # 会在底部显示简介，开头为“我是...”，请接一下地气。
+# bio会在底部显示简介，开头为“我是...”，请接一下地气。
+bio: '广东省河源市第一小学五年级的小学狗一名，热爱写博客&搞东西。爱PR，爱Scratch，爱b站和many things。现在致力于管理网站和写博客文章，对大千世界有着自己的见解。同学们中间的电脑高手（滑稽）。'
 avatar: '/assets/img/profile.jpg'
 old: '11'
 from: '广东河源'
@@ -51,17 +83,12 @@ social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
 theme-color: 'default'  # pink or default  粉色或者默认（蓝色）
 
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
-# 文章底纹（当文章没有底纹图片时），中英文对照：
-# circuitBoard 电路
-# overlappingCircles 圆环
-# food 吃货日常：肯打鸡
-# glamorous 土豪必备：钻石
-# ticTacToe 圈圈叉叉
-# seaOfClouds 中国风：云海
-# 默认为ciruitBoard
+# 文章底纹（当文章没有配图片时的默认背景）
+# 
 postPatterns: 'circuitBoard'
 
-# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+# SNS settings 配置社交网站url
+# 详细可参照16~32行
 sns:
   github: '//github.com/sctop'
 
@@ -91,17 +118,33 @@ timezone: Asia/Shanghai
 # 强制限制
 encoding: UTF-8
 
+# 联系方式
+mp: '' # 联系手机号
+phone: '' # 联系座机
+qq: '2094880085' # 联系QQ
+mail: '2094880085@qq.com' # 联系邮箱
+
+# 公告栏
+# 下面是配置站长在线时间的
+# 例如在线时间为8:00~18:00，zxsjs填写8:00，zxsjo填写18:00
+zxsjs: '9:00'
+zxsjo: '21:00'
+zxsjeat:
+  zxsjls: '12:00' # 午餐开始时间，请把zxsjlt也一同配置
+  zxsjlt: '30'  # 午餐持续时间
+  zxsjds: '19:00' # 晚餐开始时间，请把zxsjdt也一同配置
+  zxsjdt: '30'  # 晚餐持续时间
 # 统计&管理网站
-# 以下内容全部依据字符量，以0为分界线
+# 网站备案后请立即填写ICP备案并且立即查看ICP备案是否在底部并且能否链接到工信部官网
 ICP: '' # （如果有）网站备案，强烈建议填写！！！！
 
 baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # 百度统计代码js网址（hm.src片段）
+baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台验证，验证用
+baiduunion: 'c8504856a19f1bd4b39d67876b99707c' # 百度联盟（广告投放）验证
 
 bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段）
 
 360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 为360站长平台（content片段），验证用
-baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台验证，验证用
-baiduunion: 'c8504856a19f1bd4b39d67876b99707c' # 百度联盟（广告投放）验证
 
 # 友情链接
 yqlj:
@@ -111,15 +154,12 @@ yqlj:
 
 # link：友情链接是否启用
 link: true
-links_mp: '' # 联系手机号
-links_p: '' # 联系座机
-links_qq: '2094880085' # 联系QQ
-links_mail: '2094880085@qq.com' # 联系邮箱
 
 # 底部
 360webscanopen: 'true' # 360网站安全显示
 360webscanshowbig: 'true' # 360网站安全显示图标是否是大图标
 360scanurl: 'zhangqirun.cn' # 360网站安全检测的域名（不要带https://或http://，也不要带主机名）
+startyear: '2017' # 开始搭建博客的年份
 # cnzz
 cnzzdata: 'true' # cnzz横排数据是否显示
 cnzzzxrs: 'true' # cnzz在线人数是否显示

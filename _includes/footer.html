@@ -1,5 +1,5 @@
 <footer class="g-footer">
-    <section>{{ site.title }} - {% if site.dbxsxx %}{{ site.home-description }}{% endif %} © 2017 - {{ site.time | date: '%Y' }}  {% if site.cnzztj %}<script src="https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809" language="JavaScript"></script>{% endif %}</section><section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O | <a href="{{ site.codeurl }}">我的博客源代码</a></section>
+    <section>{{ site.title }}{% if site.dbxsxx %} - {{ site.home-description }}{% endif %} © {{ site.startyear }} - {{ site.time | date: '%Y' }}  {% if site.cnzztj %}<script src="https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809" language="JavaScript"></script>{% endif %}</section><section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O | <a href="{{ site.codeurl }}">我的博客源代码</a></section>
     <section>编译时间：{{ site.time }}</section>
     {% if site.dbxsxx %}
     <section>博主简介：{{ site.author }}({{ site.nickname }})，今年{{ site.old }}岁。来自{{ site.from }}。很高兴在我的博客里认识你！</section>
