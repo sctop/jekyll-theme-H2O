@@ -93,6 +93,7 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                 {% for yqlinks in site.yqlj %}
                 <a target="_blank" href="{{ yqlinks[1] }}" class="tag">{{ yqlinks[0] }}<a>
                 {% endfor %}
+                
                 {% if site.qq.size>0 or site.mail.size>0 or site.mp.size>0 or site.phone.size>0 %}
                 <p>联系我们：</p>
                 {% if site.qq.size > 0 %}
@@ -109,7 +110,6 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                 <p>座机：{{ site.phone }}</p>
                 {% endif %}
                {% endif %}
-             </section>
             {% endif %}
         </div>
 
