@@ -97,10 +97,10 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                     <p> </p>
                     <p>联系我们：</p>
                     {% if site.qq.size > 0 %}
-                    QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/assets/icons/qq_lianxiwomen.gif" alt="联系我们添加友情链接" title="联系我们添加友情链接"/></a>
+                    <p>QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/assets/icons/qq_lianxiwomen.gif" alt="联系我们添加友情链接" title="联系我们添加友情链接"/></a></p>
                     {% endif %}
                     {% if site.mail.size > 0 %}
-                    <p><a href="mailto:{{ site.links_mail }}">邮箱：{{ site.mail }}</a></p>
+                    <p>邮箱：<a href="mailto:{{ site.links_mail }}">{{ site.mail }}</a></p>
                     {% endif %}
                     {% if site.mp.size==11 %}
                     <!--11位数字是中国大陆的标准手机号-->
