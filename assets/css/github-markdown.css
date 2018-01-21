@@ -8,7 +8,7 @@
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: #24292e;
-  font-family: 楷体;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -153,15 +153,13 @@
 }
 
 .markdown-body a {
-  color: #00c8fa;
+  background-color: transparent;
   -webkit-text-decoration-skip: objects;
-text-decoration:none;
 }
 
 .markdown-body a:active,
 .markdown-body a:hover {
   outline-width: 0;
-  color: #FF4081;
 }
 
 .markdown-body strong {
@@ -234,8 +232,8 @@ text-decoration:none;
 }
 
 .markdown-body a {
-      color: #00c8fa;
-text-decoration:none;
+  color: inherit;
+  text-decoration: underline;
 }
 
 .markdown-body strong {
@@ -248,7 +246,7 @@ text-decoration:none;
   overflow: hidden;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #00A2E8;
+  border-bottom: 1px solid #dfe2e5;
 }
 
 .markdown-body hr::before {
@@ -450,7 +448,7 @@ li p:nth-child(2) {
 .markdown-body blockquote {
   padding: 0 1em;
   color: #6a737d;
-  border-left: 0.25em solid #00A2E8;
+  border-left: 0.25em solid #dfe2e5;
 }
 
 .markdown-body blockquote>:first-child {
@@ -574,7 +572,7 @@ li p:nth-child(2) {
 .markdown-body table th,
 .markdown-body table td {
   padding: 6px 13px;
-  border: 1px solid #00A2E8;
+  border: 1px solid #dfe2e5;
 }
 
 .markdown-body table tr {
