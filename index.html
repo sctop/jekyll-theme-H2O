@@ -86,31 +86,6 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                 {% endfor %}
             </section>
             {% endif %}
-            
-            {% if site.link %}
-            <section class="tags-card">
-                <div class="link-title">友情链接</div>
-                {% for yqlinks in site.yqlj %}
-                <a target="_blank" href="{{ yqlinks[1] }}" class="tag">{{ yqlinks[0] }}<a>
-                {% endfor %}
-                
-              {% if site.qq.size>0 or site.mail.size>0 or site.mp.size>0 or site.phone.size>0 %}
-                <p>联系我们：</p>
-                {% if site.qq.size>0 %}
-                <p>QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/assets/icons/qq_lianxiwomen.gif" alt="联系我们添加友情链接" title="联系我们添加友情链接"/></a></p>
-                {% endif %}
-                {% if site.mail.size>0 %}
-                <p>邮箱：<a href="mailto:{{ site.links_mail }}">{{ site.mail }}</a></p>
-                {% endif %}
-                {% if site.mp.size==11 %}
-                <!--11位数字是中国大陆的标准手机号-->
-                <p>手机：{{ site.mp }}</p>
-                {% endif %}
-                {% if site.phone.size>0 %}
-                <p>座机：{{ site.phone }}</p>
-                {% endif %}
-               {% endif %}  
-          </section>
         </div>
 
 <!--搜索-->
