@@ -10,25 +10,24 @@ img.logo{width:14px;height:14px;margin:0 5px 0 3px;}
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <h4 class="modal-title" id="myModalLabel">{{ site.title }}</h4>
       </div>
-      <div class="modal-body">
-	  <p>欢迎来到童年是个风筝的博客！</p>
-	  <p>本博客为非盈利网站，在<a target="_blank" href="https://pages.github.com/">GitHub Pages</a>上用开源的静态模板<a target="_blank" href="https://github.com/kaeyleo/jekyll-theme-H2O">H2O</a>。</p>
-	  <p>切换到<a href="https://www.zhangqirun.cn/">更安全的博客</a></p>
-	  <p>PS. 由于本弹窗是从<a target="_blank" href="//likebuying.top">空白代刷站</a>自行移植过来的，所以本公告栏可能会出现不可预知的错误。</p>
-	  <!--公告-->
-	  <ul>
-	  <li><h3>公告栏</h3></li>
-	  <li><h4>代码框问题（紧急-已修复）</h4></li>
-	  <li>根据本人于2018/01/22一整个下午的紧急修复，现目前所有浏览器均正常。</li>
-	  <li>在测试时发现Chrome浏览器对代码框极其不友好，Firefox和其它第三方浏览器（令我惊讶的是例如360这种基于Chrome的浏览器居然表现出奇的好，跟Firefox没有两样）。在用Firefox调试时发现Prism的css加载了但是js部分没有加载，在调试中我们也发现js是主要成分。因此我们将js直接放在<head>标签里头，让js代码能以最快的速度加载出来，以便给访客最好的体验。</li>
-	  <li><h4>加载：弹窗问题</h4></li>
-	  <li>目前我们已经发现了弹窗会出现需要较长时间的加载，为此我建议大家目前暂且将DNS替换成119.29.29.29（DNSPOD的DNS）来进行较为*快速*的访问。或者期待明天我们的更新。</li>
-	  </ul>
-	  <br>{{ site.title }}  {{ site.author}} © {{ site.startyear }} - {{ site.time | date: '%Y' }} 保留所有权利</br>
-    <br> </br>
-	<br>本网站编译时间：{{ site.time }}</br>
-	<button type="button" class="btn btn-default" data-dismiss="modal">知道啦</button>
-      </div>
+       <div class="modal-body">
+	        <p>欢迎来到童年是个风筝的博客！</p>
+	        <p>本博客为非盈利网站，在<a target="_blank" href="https://pages.github.com/">GitHub Pages</a>上用开源的静态模板<a target="_blank" href="https://github.com/kaeyleo/jekyll-theme-H2O">H2O</a>。</p>
+	        <p>切换到<a href="https://www.zhangqirun.cn/">更安全的博客</a></p>
+	        <p>PS. 由于本弹窗是从<a target="_blank" href="//likebuying.top">空白代刷站</a>自行移植过来的，所以本公告栏可能会出现不可预知的错误。</p>
+	        <!--公告-->
+	        <ul>
+	            <li><h3>公告栏</h3></li>
+	            <li><h4>加载：弹窗问题（无法修复）</h4></li>
+	            <li>在昨日我们发现了弹窗需要较长时间的加载，并在下午尝试修复此问题。但不幸的是，我无法修复此问题。我将所有css和js全部加载到<head>标签上，但是这样的“移花接木”导致了弹窗无法加载的更加严重的问题。</li>
+				<li>如您仍然遇到此问题，请尝试将DNS换成高质量的DNS——119.29.29.29（DNSPOD的高质量DNS）。如您不会修改DNS，并且您处于WLAN的情况下，请自行度娘。谢谢合作:)。</li>
+	        </ul>
+	        <br>{{ site.title }}  {{ site.author}} © {{ site.startyear }} - {{ site.time | date: '%Y' }} 保留所有权利</br>
+		    <!--分隔符-->
+            <br> </br>
+	        <br>本网站编译时间：{{ site.time }}</br>
+	    <button type="button" class="btn btn-default" data-dismiss="modal">知道啦</button>
+       </div>
     </div>
   </div>
 </div>
