@@ -35,7 +35,7 @@
 title: '童年是个风筝的博客'
 description: '小名宝仔，Scratch语言爱好者，河源市第一小学五年级小学狗一名。现在致力于管理网站和写博客文章。'  # 搜索引擎蜘蛛捕捉的内容
 keyword: '童年是个风筝, 童年是个风筝的博客, 张颀润'
-url: 'http://www.zhangqirun.cn/' # your host
+url: 'https://www.zhangqirun.cn/' # your host / 你的域名（注意这里有https就写上https，否则的话到时候会有引用不安全资源的问题）
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
@@ -137,15 +137,18 @@ bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段�
 360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 为360站长平台（content片段），验证用
 
 # 友情链接
+link: true
 yqlj:
+  博客模板支持: 'http://jekyllthemes.org'
+  Liquid（jekyll）模板的食用方法(⌒▽⌒): 'https://liquid.bootcss.com/'
+  Jekyll中文翻译版教程: 'http://jekyllcn.com/'
+  Jekyll原版教程: 'https://jekyllrb.com/'
   空白代刷站: 'http://likebuying.top/'
   空白君的博客: 'http://kbboke.xyz/'
   fttidc主机: 'http://fttidc.com/'
   腾讯云: 'https://cloud.tencent.com/'
   CloudFlare云服务: 'https://www.cloudflare.com/'
-
-# link：友情链接是否启用
-link: true
+# ---分界线---
 
 # 底部
 360webscanopen: 'true' # 360网站安全显示
