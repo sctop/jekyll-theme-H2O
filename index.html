@@ -96,19 +96,19 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                 {% endfor %}
                 {% if site.qq.size>0 or site.mail.size>0 or site.mp.size>0 or site.phone.size>0 %}
                     <p> </p>
-                    <p>联系我们：</p>
+                    <p>联系我们（以下联系方式均可直接单击联系，部分电脑端不可用）：</p>
                     {% if site.qq.size > 0 %}
                     <p>QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/assets/icons/qq_lianxiwomen.gif" alt="联系我们添加友情链接" title="联系我们添加友情链接"/></a></p>
                     {% endif %}
                     {% if site.mail.size > 0 %}
-                    <p>邮箱：<a href="mailto:{{ site.links_mail }}">{{ site.mail }}</a></p>
+                    <p>邮箱：<a target="_blank" href="mailto:{{ site.links_mail }}">{{ site.mail }}</a></p>
                     {% endif %}
                     {% if site.mp.size==11 %}
                     <!--11位数字是中国大陆的标准手机号-->
-                    <p>手机：{{ site.mp }}</p>
+		    <p>手机：<a href="tel:{{ site.mp }}">{{ site.mp }}</a></p>
                     {% endif %}
                     {% if site.phone.size > 0 %}
-                    <p>座机：{{ site.phone }}</p>
+		    <p>座机：<a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
 		    {% endif %}
                 {% endif %}
             </section>
