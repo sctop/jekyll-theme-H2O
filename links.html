@@ -49,7 +49,7 @@ title: 友情链接
         <li>
             <h2 align="center" id="404-site">您的站点没有出现在这里？</h2>
             <p>站长大大{{ site.author }}说，只有满足以下条件的站长才能被添加到这里哦！</p>
-            <p>1、友情链接格式</p>
+            <h4>1、友情链接格式</h4>
             <p>首先，友情链接的名称必须是“{{ site.title }}”，必须要指向“{{ site.url }}”才可以哦！</p>
             <p>如果您的网站的友情链接必须要有头像，可以戳这里获取博主女装相片哦（如果你不怕因为加了女装相片而被站长拒绝的话）：<a target="_blank" href="/assets/img/profile.jpg">单击此处获取博主女装图片外加链接</a></p>
             {% if site.qq.size>0 or site.mail.size>0 or site.mp.size>0 or site.phone.size>0 %}
@@ -70,6 +70,9 @@ title: 友情链接
                 <!--这里填写的是座机电话（相对于手机较为不经常变化位置的，即号码为0799-555555的类似内容）-->
                 <p>座机：<a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
             {% endif %}
+			{% else %}
+			<h4>2、联系站长...站长貌似没有留下什么东西啊。。</h4>
+			{% endif %}
         </li>
         </div>
         {% endif %}
