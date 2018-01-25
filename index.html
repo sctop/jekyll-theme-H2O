@@ -87,13 +87,35 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
             </section>
             {% endif %}
             
-            {% if site.link %}
+            {% if site.haolinks or site.putonglinks or site.zzlinks %}
             <section class="tags-card">
                 <div class="link-title">友情链接</div>
 		<p>博客模板来源：<a target="_blank" href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">jekyllthemes.org - H2O模板</a></p>
-                {% for yqlinks in site.yqlj %}
-                <a target="_blank" href="{{ yqlinks[1] }}" class="tag">{{ yqlinks[0] }}</a>
+		<p> </p>
+		<!--good-links start-->
+		{% if site.haolinks %}
+		<p>优质的友情链接</p>
+		{% for haolinks in site.goodlinks %}
+                    <a target="_blank" href="{{ haolinks[1] }}" class="tag">{{ haolinks[0] }}</a>
                 {% endfor %}
+		{% endif %}
+		<!--good-links end-->
+		<!--putong-links start-->
+		{% if site.ptlinks %}
+		<p>普普通通的友情链接：</p>
+		{% for putonglinks in site.ptlinks %}
+		    <a target="_blank" href="{{ putonglinks[1] }}" class="tag">{{ putonglinks[0] }}</a>
+		{% endfor %}
+		{% endif %}
+		<!--putong-links end-->
+		<!--zanzhu-links start-->
+		{% if site.zzlinks %}
+		<p>赞助（服务提供）商：</p>
+		{% for zanzhushanglinks in site.zzlinks %}
+		    <a target="_blank" href="{{ zanzhushanglinks[1] }}" class="tag">{{ zanzhushanglinks[0] }}</a>
+		{% endfor %}
+		{% endif %}
+		<!--zanzhu-links end-->
                 {% if site.qq.size>0 or site.mail.size>0 or site.mp.size>0 or site.phone.size>0 %}
                     <p> </p>
                     <p>联系我们（以下联系方式均可直接单击联系，部分电脑端不可用）：</p>
@@ -110,6 +132,9 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                     {% if site.phone.size > 0 %}
 		    <p>座机：<a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
 		    {% endif %}
+		    <p>友情链接的名称：{{ site.title }}</p>
+		    <p>友情链接的头像（可选）：<a target="_blank" href="/assets/img/profile.jpg">单击此处获取博主女装图片链接</a></p>
+		    <p>添加到您的网站后，请通过以上方式联系我，收到邮件后我会第一时间去查看并更新友情链接内容的。</p>
                 {% endif %}
             </section>
            {% endif %}
