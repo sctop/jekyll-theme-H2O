@@ -1,0 +1,104 @@
+---
+layout: default
+title: 友情链接
+---
+
+{% include header.html %}
+
+<div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
+    <h2>友情链接</h2>
+</div>
+
+<main class="tags-content">
+    <ul class="tags-list">
+        <li>
+			<p>博客模板来源：<a target="_blank" href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">jekyllthemes.org - H2O模板</a></p>
+			<p>本博客的友情链接分为三种：优质的友情链接、普普通通的友情链接、赞助（服务提供）商友情链接。</p>
+			<p>快速导航：<a target="_blank" href="#good-links" class="tag">优质的友情链接</a> | <a target="_blank" href="#no-good-links" class="tag">普普通通的友情链接</a> | <a target="_blank" href="#赞助（服务提供）商的友情链接" class="tag">赞助（服务提供）商的友情链接</a> | <a target="_blank" href="#404-site" class="tag">站点丢了</a> | <a target="_blank" href="#no-good-things" class="tag">举报不适合的内容</a></p>
+        </li>
+		<!--优质的友情链接-->
+        <li>
+            <span class="tag-name" id="good-links">「优质的友情链接」</span>
+			{% for haolinks in site.goodlinks %}
+				<a target="_blank" class="tag-post" href="{{ goodlinks[1] }}" title="{{ goodlinks[0] }}">{{ goodlinks[0] }}</a>
+            {% endfor %}
+        </li>
+		</div>
+		<!--普普通通的友情链接-->
+        <li>
+            <span class="tag-name" id="no-good-links">「普普通通的友情链接」</span>
+			{% for putonglinks in site.ptlinks %}
+				<a target="_blank" href="{{ putonglinks[1] }}" class="tag">{{ putonglinks[0] }}</a>
+			{% endfor %}
+        </li>
+		</div>
+		<!--赞助（服务提供）商-->
+		<li>
+            <span class="tag-name" id="赞助（服务提供）商的友情链接">「赞助（服务提供）商的友情链接」</span>
+			{% for zanzhushanglinks in site.zanzhulinks %}
+				<a target="_blank" href="{{ zanzhushanglinks[1] }}" class="tag">{{ zanzhushanglinks[0] }}</a>
+			{% endfor %}
+        </li>
+        </div>
+		<li>
+			<h2 align="center" id="404-site">您的站点没有出现在这里？</h2>
+			<p>站长大大{{ site.author }}说，只有满足以下条件的站长才能被添加到这里哦！</p>
+			<p>1、友情链接格式</p>
+			<p>首先，友情链接的名称必须是“{{ site.title }}”，必须要指向“{{ site.url }}”才可以哦！</p>
+			<p>如果您的网站的友情链接必须要有头像，可以戳这里获取博主女装相片哦（如果你不怕因为加了女装相片而被站长拒绝的话）：<a target="_blank" href="/assets/img/profile.jpg">单击此处获取博主女装图片外加链接</a></p>
+			{% if site.qq.size>0 or site.mail.size>0 or site.mp.size>0 or site.phone.size>0 %}
+				<h4 id="联系站长">2、联系站长</h4>
+				<p>添加完之后，站长大大不可能会立刻注意到你的网站的变动。所以你需要自己联系站长大大以让Ta注意到你哦！</p>
+				<p>站长大大目前支持的联系方式（QQ或者邮箱更好哦）：</p>
+			{% if site.qq.size > 0 %}
+				<p>QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/assets/icons/qq_lianxiwomen.gif" alt="联系站长添加友情链接" title="联系站长添加友情链接"/></a></p>
+			{% endif %}
+			{% if site.mail.size>0 %}
+				<p>邮箱：<a target="_blank" href="mailto:{{ site.links_mail }}">{{ site.mail }}</a></p>
+			{% endif %}
+			{% if site.mp.size==11 %}
+			<!--11位手机号属于中国大陆标准手机号，大陆通用-->
+			<p>手机：<a href="tel:{{ site.mp }}">{{ site.mp }}</a></p>
+			{% endif %}
+			{% if site.phone.size>0 %}
+			<!--这里填写的是座机电话（相对于手机较为不经常变化位置的，即号码为0799-555555的类似内容）-->
+			<p>座机：<a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
+			{% endif %}
+		</li>
+		<li>
+			<h2 align="center" id="no-good-things">友情链接出现了不适内容？</h2>
+			<p>请通过邮箱或者QQ告知站长{{ site.author }}，切记千万不要口头告知，一定要在QQ或邮件里头写清楚。</p>
+			<p>请详细告知站长此链接在哪三类中出现，并写上链接名称、链接的哪里出现了不适内容（可填写多个URL）。站长在查看邮件后将会去查看网页，并判断是否需要下架。</p>
+			<p>可参照如下格式：</p>
+			<pre>
+			<code>
+			您好，
+			我在您的站点的友情链接页面（ https://www.zhangqirun.cn/links.html ）发现了不适内容。我发现于2333年3月3日。
+			该不适内容来自于xx区，名称为xxx，不适链接包含如下：
+			xxx
+			xxx
+			xxx
+			请尽快确认一下。
+			</code>
+			</pre>
+			<p>或者你可以用“编程”的方式告诉我：</p>
+			<pre>
+			<code>
+			page: ' https://www.zhangqirun.cn/links.html '
+			date: '2333-3-3'
+			
+			from: 'xxxxx'
+			name: 'xxx'
+			url:
+			{
+			  xxx
+			  xxx
+			  xxx
+			}
+			</pre>
+			</code>
+		</li>
+    </ul>
+</main>
+    
+{% include footer.html %}

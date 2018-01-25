@@ -72,6 +72,7 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                         </a>
                     </li>
                     {% endfor %}
+					<p>站长的联系方式请到<a target="_blank" href="{{ site.url }}/links.html/#联系站长">友情链接</a>处查看~谢谢合作</p>
                 </ul>
                 {% endif %}
             </section>
@@ -90,55 +91,11 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
             {% if site.haolinks or site.putonglinks or site.zzlinks %}
             <section class="tags-card">
                 <div class="link-title">友情链接</div>
-		<p>博客模板来源：<a target="_blank" href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">jekyllthemes.org - H2O模板</a></p>
-		<p> </p>
-		<!--good-links start-->
-		{% if site.haolinks %}
-		<p>优质的友情链接</p>
-		{% for haolinks in site.goodlinks %}
-                    <a target="_blank" href="{{ haolinks[1] }}" class="tag">{{ haolinks[0] }}</a>
-                {% endfor %}
-		{% endif %}
-		<!--good-links end-->
-		<!--putong-links start-->
-		{% if site.ptlinks %}
-		<p>普普通通的友情链接：</p>
-		{% for putonglinks in site.ptlinks %}
-		    <a target="_blank" href="{{ putonglinks[1] }}" class="tag">{{ putonglinks[0] }}</a>
-		{% endfor %}
-		{% endif %}
-		<!--putong-links end-->
-		<!--zanzhu-links start-->
-		{% if site.zzlinks %}
-		<p>赞助（服务提供）商：</p>
-		{% for zanzhushanglinks in site.zanzhulinks %}
-		    <a target="_blank" href="{{ zanzhushanglinks[1] }}" class="tag">{{ zanzhushanglinks[0] }}</a>
-		{% endfor %}
-		{% endif %}
-		<!--zanzhu-links end-->
-                {% if site.qq.size>0 or site.mail.size>0 or site.mp.size>0 or site.phone.size>0 %}
-                    <p> </p>
-                    <p>联系我们（以下联系方式均可直接单击联系，部分电脑端不可用）：</p>
-                    {% if site.qq.size > 0 %}
-                    <p>QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/assets/icons/qq_lianxiwomen.gif" alt="联系我们添加友情链接" title="联系我们添加友情链接"/></a></p>
-                    {% endif %}
-                    {% if site.mail.size > 0 %}
-                    <p>邮箱：<a target="_blank" href="mailto:{{ site.links_mail }}">{{ site.mail }}</a></p>
-                    {% endif %}
-                    {% if site.mp.size==11 %}
-                    <!--11位数字是中国大陆的标准手机号-->
-		    <p>手机：<a href="tel:{{ site.mp }}">{{ site.mp }}</a></p>
-                    {% endif %}
-                    {% if site.phone.size > 0 %}
-		    <p>座机：<a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
-		    {% endif %}
-		    <p>友情链接的名称：{{ site.title }}</p>
-		    <p>友情链接的头像（可选）：<a target="_blank" href="/assets/img/profile.jpg">单击此处获取博主女装图片外加链接</a></p>
-		    <p>友情链接地址：{{ site. url }}</p>
-		    <p>添加到您的网站后，请通过以上方式联系我，收到邮件后我会第一时间去查看并更新友情链接内容的。</p>
-                {% endif %}
-            </section>
-           {% endif %}
+					<p>博客模板来源：<a target="_blank" href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">jekyllthemes.org - H2O模板</a></p>
+					<p>友情链接搬家啦！请单击这里访问到友情链接：<a target="_blank" href="/links.html">友情链接</a></p>
+				</div>
+			</section>
+			{% endif %}
         </div>
 
         {% if site.search %}

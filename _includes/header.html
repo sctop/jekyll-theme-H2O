@@ -1,6 +1,7 @@
 <header class="g-header">
     <div class="g-logo">
       <a href="{{ "/" | relative_url }}"></a>
+	  <h1 id="top"> </h1>
     </div>
     <i id="menu-toggle" class="iconfont icon-menu"></i>
     <nav class="g-nav">
@@ -8,6 +9,9 @@
             {% for i in site.nav %}
             <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
             {% endfor %}
+			{% if site.haolinks or site.putonglinks or site.zzlinks %}
+			<li><a href="/links.html">LINKS</a></li>
+			{% endif %}
             {% if site.RSS %}
             <li><a href="/feed.xml">RSS</a></li>
             {% endif %}
