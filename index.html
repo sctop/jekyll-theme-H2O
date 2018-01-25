@@ -111,7 +111,7 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
 		<!--zanzhu-links start-->
 		{% if site.zzlinks %}
 		<p>赞助（服务提供）商：</p>
-		{% for zanzhushanglinks in site.zzlinks %}
+		{% for zanzhushanglinks in site.zanzhulinks %}
 		    <a target="_blank" href="{{ zanzhushanglinks[1] }}" class="tag">{{ zanzhushanglinks[0] }}</a>
 		{% endfor %}
 		{% endif %}
