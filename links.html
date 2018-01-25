@@ -17,22 +17,27 @@ title: 友情链接
 			<p>快速导航：<a target="_blank" href="#good-links" class="tag">优质的友情链接</a> | <a target="_blank" href="#no-good-links" class="tag">普普通通的友情链接</a> | <a target="_blank" href="#赞助（服务提供）商的友情链接" class="tag">赞助（服务提供）商的友情链接</a> | <a target="_blank" href="#404-site" class="tag">站点丢了</a> | <a target="_blank" href="#no-good-things" class="tag">举报不适合的内容</a></p>
         </li>
 		<!--优质的友情链接-->
+        {% if site.haolinks %}
         <li>
             <span class="tag-name" id="good-links">「优质的友情链接」</span>
-			{% for haolinks in site.goodlinks %}
+			{% for hlink in site.goodlinks %}
 				<a target="_blank" class="tag-post" href="{{ goodlinks[1] }}" title="{{ goodlinks[0] }}">{{ goodlinks[0] }}</a>
             {% endfor %}
         </li>
 		</div>
+        {% endif %}
 		<!--普普通通的友情链接-->
+        {% if site.putonglinks %}
         <li>
             <span class="tag-name" id="no-good-links">「普普通通的友情链接」</span>
-			{% for putonglinks in site.ptlinks %}
+			{% for ptlink in site.ptlinks %}
 				<a target="_blank" href="{{ putonglinks[1] }}" class="tag">{{ putonglinks[0] }}</a>
 			{% endfor %}
         </li>
 		</div>
+        {% endif %}
 		<!--赞助（服务提供）商-->
+        {% if site.zzlink %}
 		<li>
             <span class="tag-name" id="赞助（服务提供）商的友情链接">「赞助（服务提供）商的友情链接」</span>
 			{% for zanzhushanglinks in site.zanzhulinks %}
@@ -40,6 +45,7 @@ title: 友情链接
 			{% endfor %}
         </li>
         </div>
+        {% endif %}
 		<li>
 			<h2 align="center" id="404-site">您的站点没有出现在这里？</h2>
 			<p>站长大大{{ site.author }}说，只有满足以下条件的站长才能被添加到这里哦！</p>
