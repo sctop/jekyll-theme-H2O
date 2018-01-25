@@ -21,7 +21,7 @@ title: 友情链接
         <li>
             <span class="tag-name" id="good-links">「优质的友情链接」</span>
             {% for hlinks in site.goodlinks %}
-                <a target="_blank" class="tag-post" href="{{ hlinks[1] }}" title="{{ hlinks[0] }}">{{ hlinks[0] }}</a>
+                <a target="_blank" class="tag" href="{{ hlinks[1] }}">{{ hlinks[0] }}</a>
             {% endfor %}
         </li>
         </div>
