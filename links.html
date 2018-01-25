@@ -20,8 +20,8 @@ title: 友情链接
         {% if site.haolinks %}
         <li>
             <span class="tag-name" id="good-links">「优质的友情链接」</span>
-            {% for hlink in site.goodlinks %}
-                <a target="_blank" class="tag-post" href="{{ goodlinks[1] }}" title="{{ goodlinks[0] }}">{{ goodlinks[0] }}</a>
+            {% for hlinks in site.goodlinks %}
+                <a target="_blank" class="tag-post" href="{{ hlinks[1] }}" title="{{ hlinks[0] }}">{{ hlinks[0] }}</a>
             {% endfor %}
         </li>
         </div>
@@ -31,7 +31,7 @@ title: 友情链接
         <li>
             <span class="tag-name" id="no-good-links">「普普通通的友情链接」</span>
             {% for ptlink in site.ptlinks %}
-                <a target="_blank" href="{{ putonglinks[1] }}" class="tag">{{ putonglinks[0] }}</a>
+                <a target="_blank" href="{{ ptlink[1] }}" class="tag">{{ ptlink[0] }}</a>
             {% endfor %}
         </li>
         </div>
