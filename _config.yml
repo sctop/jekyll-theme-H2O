@@ -132,10 +132,12 @@ ICP: '' # （如果有）网站备案，强烈建议填写！！！！
 baidutj: 'https://hm.baidu.com/hm.js?96736cf6e5a2a329a74ae83047b92073' # 百度统计代码js网址（hm.src片段）
 baidusszypt: 'mKtf56wzTi' # 百度搜索资源平台验证，验证用
 baiduunion: 'c8504856a19f1bd4b39d67876b99707c' # 百度联盟（广告投放）验证
+baidusszyptautolink: true # 百度自动提交链接
 
 bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段）
 
 360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 为360站长平台（content片段），验证用
+360autolinks: true # 360自动提交链接
 
 # 友情链接
 # 这里是优质友情链接

@@ -27,3 +27,11 @@
     })();
  </script>
 {% endif %}
+{% if site.360autolinks %}
+<script>
+(function(){
+	var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?3c615d94efec6cc7bcd06eee70c54dc0":"https://jspassport.ssl.qhimg.com/11.0.1.js?3c615d94efec6cc7bcd06eee70c54dc0";
+	document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+{% endif %}
