@@ -50,6 +50,7 @@ nav:
   home: '/'
   tags: '/tags.html'
   VistalStudio: '/VisualStudio2017.html'
+  subsidize: '/zanshang.html'
   
 # RSS订阅
 RSS: true
@@ -85,7 +86,6 @@ theme-color: 'default'  # pink or default  粉色或者默认（蓝色）
 
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
 # 文章底纹（当文章没有配图片时的默认背景）
-# 
 postPatterns: 'circuitBoard'
 
 # SNS settings 配置社交网站url
@@ -139,6 +139,21 @@ bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段�
 360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 为360站长平台（content片段），验证用
 360autolinks: true # 360自动提交链接
 
+# 赞赏功能（此处必须写图片链接）
+zanshang: true
+zstext: '' # 激励大家赞赏的话
+alipay: '' # 支付宝
+wechatpay: '' # 微信支付（二维码）
+wechatcxpay: '' # 微信赞赏码（小程序式）
+qqpay: '' # QQ钱包（二维码）
+# cardpay采用cardnumber的大小（size）来进行确认有没有填写。
+cardpay:
+  cancardpay: 'false' # 可以进行银行卡转账付款了吗，true或者false
+  cardname: '' # 持卡人姓名 留空直接默认博主信息配置处的author
+  cardnumber: '' # 卡号
+  cardkaihh: '' # 开户行
+  cardlx:'' # 卡的类型，目前支持借记（jieji）、信用（xinyong）卡（不分准贷记和贷记卡）
+# ------------------------------
 # 友情链接
 # 这里是优质友情链接
 haolinks: true

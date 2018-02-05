@@ -39,6 +39,11 @@
     <article class="markdown-body">
         {{ page.content }}
     </article>
+	{% if site.zanshang %}
+	<div class="avatar">
+		<a href="/zanshang.html" title="baidu"><img src="/assets/icons/shang.png" /></a>
+	</div>
+	{% endif %}
     {% if site.social-share %}
     <div class="social-share-wrapper">
         <div class="social-share"></div>
