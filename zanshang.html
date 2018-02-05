@@ -21,9 +21,12 @@ title: 赞赏区
 			{% if site.wechatcx.size>0 %}
 			<p><a href="#wechat-small-software" class="tag">微信赞赏码方式付款</a></p>
 			{% endif %}
-			
-			<p><a href="#404-site" class="tag">站点丢了</a></p>
-			<p><a href="#no-good-things" class="tag">举报不适合的内容</a></p>
+			{% if site.qqpay.size>0 %}
+			<p><a href="#qq" class="tag">QQ钱包转账二维码方式付款</a></p>
+			{% endif %}
+			{% if site.cardpay.cardnumber.size>0 %}
+			<p><a href="#cardpay" class="tag">银行卡转账方式付款</a></p>
+			{% endif %}
         </li>
 		{% if site.alipay.size>0 %}
 		<li>
@@ -51,7 +54,7 @@ title: 赞赏区
 		{% endif %}
 		{% if site.cardpay.cardnumber.size>0 %}
 		<li>
-			<span class="tag-name" id="cardpay">「银行卡转账」</span>
+			<span class="tag-name" id="cardpay">「银行卡转账付款」</span>
 			<p>请认真核对以下内容！内容出错博主不负责，除非特别注明。</p>
 			{% if site.cancardpay %}
 				<p>< This card is ready! 此卡已准备完毕！ ></p>
@@ -80,6 +83,7 @@ title: 赞赏区
                 <p>手机：<a href="tel:{{ site.mp }}">{{ site.mp }}</a></p>
             {% endif %}
 		</li>
+	</ul>
 </main>
     
 {% include footer.html %}
