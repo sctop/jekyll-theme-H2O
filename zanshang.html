@@ -11,15 +11,16 @@ title: 赞赏区
 
 <main class="tags-content">
     <ul class="tags-list">
+		{% if site.alipay.size>0 or site.wechatpay.size>0 or site.wechatcxpay.size>0 or site.qqpay.size>0 or site.cardpay.cardnumber.size>0 %}
 		<li>
             <p>赞赏快速导航：</p>
 			{% if site.alipay.size>0 %}
 			<p><a href="#alipay" class="tag">支付宝方式付款</a></p>
 			{% endif %}
-			{% if site.wechat.size>0 %}
+			{% if site.wechatpay.size>0 %}
 			<p><a href="#wechat" class="tag">微信方式付款</a></p>
 			{% endif %}
-			{% if site.wechatcx.size>0 %}
+			{% if site.wechatcxpay.size>0 %}
 			<p><a href="#wechat-small-software" class="tag">微信赞赏码方式付款</a></p>
 			{% endif %}
 			{% if site.qqpay.size>0 %}
@@ -29,6 +30,7 @@ title: 赞赏区
 			<p><a href="#cardpay" class="tag">银行卡转账方式付款</a></p>
 			{% endif %}
         </li>
+		{% endif %}
 		{% if site.alipay.size>0 %}
 		<li>
 			<span class="tag-name" id="alipay">「支付宝方式」</span>
