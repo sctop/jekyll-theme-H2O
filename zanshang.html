@@ -49,7 +49,7 @@ title: 赞赏区
 			<img src="{{ site.wechatcxpay }}"  alt="使用微信赞赏码方式" width="650" />
 		</li>
 		{% endif %}
-		{% if site.qqpay %}
+		{% if site.qqpay.size>0 %}
 		<li>
 			<span class="tag-name" id="qq">「QQ钱包转账二维码方式」</span>
 			<img src="{{ site.qqpay }}"  alt="使用QQ钱包转账二维码方式" width="650" />
