@@ -62,7 +62,6 @@ title: 赞赏区
 				<p>持卡人姓名：{% if site.cardname.size==0 or site.cardname==nil %}{{ site.author }}{ else }{{ site.cardname }}{% endif %}</p>
 				<p>卡号：{{ site.cardnumber }}</p>
 				<p>开户行：{{ site.cardkaihh }}</p>
-				<p>银行卡类型：{% if site.cardlx.size==5 %}借记卡{% else %}信用卡{% endif %}</p>
 			</li>
 		</li>
 		{% endif %}
