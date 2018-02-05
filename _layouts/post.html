@@ -38,12 +38,8 @@
     {% endif %}
     <article class="markdown-body">
         {{ page.content }}
+		{% if site.zanshang %}<a href="/zanshang.html" title="赞赏"><img src="/assets/icons/shang.png" height="40" /></a>{% endif %}
     </article>
-	{% if site.zanshang %}
-	<div class="avatar">
-		<a href="/zanshang.html" title="baidu"><img src="/assets/icons/shang.png" /></a>
-	</div>
-	{% endif %}
     {% if site.social-share %}
     <div class="social-share-wrapper">
         <div class="social-share"></div>
