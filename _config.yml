@@ -143,7 +143,7 @@ bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段�
 zanshang: true
 zstext: '' # 激励大家赞赏的话
 alipay: '' # 支付宝
-wechatpay: '' # 微信支付（二维码）
+wechatpay: '/assets/img/wechatpay.png' # 微信支付（二维码）
 wechatcxpay: '' # 微信赞赏码（小程序式）
 qqpay: '' # QQ钱包（二维码）
 # cardpay采用cardnumber的大小（size）来进行确认有没有填写。
