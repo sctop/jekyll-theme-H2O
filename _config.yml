@@ -151,8 +151,6 @@ cardpay:
   cancardpay: 'false' # 可以进行银行卡转账付款了吗，true或者false
   cardname: '' # 持卡人姓名 留空直接默认博主信息配置处的author
   cardnumber: '' # 卡号
-  cardkaihh: '' # 开户行
-  cardlx:'' # 卡的类型，目前支持借记（jieji）、信用（xinyong）卡（不分准贷记和贷记卡）
 # ------------------------------
 # 友情链接
 # 这里是优质友情链接
