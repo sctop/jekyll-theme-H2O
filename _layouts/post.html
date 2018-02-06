@@ -37,9 +37,37 @@
     <h2 class="post-subtitle">{{ page.subtitle }}</h2>
     {% endif %}
     <article class="markdown-body">
+		{% if site.googleads.headposts %}
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<ins class="adsbygoogle"
+			style="display:block; text-align:center;"
+			data-ad-layout="in-article"
+			data-ad-format="fluid"
+			data-ad-client="ca-pub-9833352239491773"
+			data-ad-slot="9193782173"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		<hr />
+		{% endif %}
         {{ page.content }}
+		<hr />
+		<p>以下这些段落不是在文章里的内容。</p>
+		{% if site.googleads.downposts %}
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<ins class="adsbygoogle"
+			style="display:block; text-align:center;"
+			data-ad-layout="in-article"
+			data-ad-format="fluid"
+			data-ad-client="ca-pub-9833352239491773"
+			data-ad-slot="4184163925"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		{% endif %}
 		{% if site.zanshang %}<a href="/zanshang.html" title="赞赏" target="_blank"><img src="/assets/icons/shang.png" height="40" /></a>{% endif %}
     </article>
+	<hr />
     {% if site.social-share %}
     <div class="social-share-wrapper">
         <div class="social-share"></div>

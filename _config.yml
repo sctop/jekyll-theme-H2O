@@ -152,6 +152,15 @@ cardpay:
   cardname: '' # 持卡人姓名 留空直接默认博主信息配置处的author
   cardnumber: '' # 卡号
 # ------------------------------
+# 谷歌广告
+googleads:
+  tqads: 'true' # 弹窗内广告
+  index: 'true' # （电脑端可用）首页右侧
+  indexposts: 'true' # 首页文章排列下方
+  headposts: 'true' # 文章头部显示
+  downposts: 'true' # 文章底部显示
+  phonedbads: 'true' # （移动端可用）底部固定式覆盖弹窗
+# --------------------------
 # 友情链接
 # 这里是优质友情链接
 haolinks: true
@@ -175,7 +184,6 @@ zanzhulinks:
   腾讯云: 'https://cloud.tencent.com/'
   CloudFlare云服务: 'https://www.cloudflare.com/'
 # ---分界线---
-
 # 底部
 360webscanopen: 'true' # 360网站安全显示
 360webscanshowbig: 'true' # 360网站安全显示图标是否是大图标
