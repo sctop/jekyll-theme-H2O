@@ -154,6 +154,7 @@ cardpay:
 # ------------------------------
 # 谷歌广告
 googleads:
+  googleadson: 'true' # 启用广告？
   tqads: 'true' # 弹窗内广告
   index: 'true' # （电脑端可用）首页右侧
   indexposts: 'true' # 首页文章排列下方
