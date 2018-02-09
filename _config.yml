@@ -50,7 +50,6 @@ nav:
   home: '/'
   tags: '/tags.html'
   VistalStudio: '/VisualStudio2017.html'
-  subsidize: '/zanshang.html'
   
 # RSS订阅
 RSS: true
