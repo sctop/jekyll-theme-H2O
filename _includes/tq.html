@@ -29,26 +29,27 @@ img.logo{width:14px;height:14px;margin:0 5px 0 3px;}
 					<li>PC 和 手机端：弹窗</li>
 					<li>手机端：在手机屏幕四边的固定式覆盖广告</li>
 				</ul>
+				<li>网站目前正在被审核。可能需要三天或更多时间。</li>
 	        </ul>
 	        <br>{{ site.title }}  {{ site.author}} © {{ site.startyear }} - {{ site.time | date: '%Y' }} 保留所有权利</br>
 		    <!--分隔符-->
             <hr />
 	        <br>本网站编译时间：{{ site.time }}</br>
-			<!--广告-->
-			<hr />
-			<br>本广告来自于Google</br>
-			{% if site.googleads.tqads %}
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- 弹窗广告 -->
-			<ins class="adsbygoogle"
-				style="display:block"
-				data-ad-client="ca-pub-9833352239491773"
-				data-ad-slot="7116082043"
-				data-ad-format="auto"></ins>
+            <!--广告-->
+            <hr />
+            <br>本广告来自于Google</br>
+            {% if site.googleads.tqads %}
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 弹窗广告 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-9833352239491773"
+                data-ad-slot="7116082043"
+                data-ad-format="auto"></ins>
             <script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-			{% endif %}
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            {% endif %}
 	    <button type="button" class="btn btn-default" data-dismiss="modal">知道啦</button>
        </div>
     </div>

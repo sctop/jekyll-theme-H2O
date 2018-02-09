@@ -11,8 +11,11 @@ title: 赞赏区
 
 <main class="tags-content">
     <ul class="tags-list">
+	    <style type="text/css">
+	    div,img{ width:100%;}
+	    </style>
 		{% if site.alipay.size>0 or site.wechatpay.size>0 or site.wechatcxpay.size>0 or site.qqpay.size>0 or site.cardpay.cardnumber.size>0 %}
-		<li>
+	    <li>
             <p>赞赏快速导航：</p>
 			{% if site.alipay.size>0 %}
 			<p><a href="#alipay" class="tag">支付宝方式付款</a></p>
@@ -34,25 +37,33 @@ title: 赞赏区
 		{% if site.alipay.size>0 %}
 		<li>
 			<span class="tag-name" id="alipay">「支付宝方式」</span>
-			<img src="{{ site.alipay }}"  alt="使用支付宝方式" width="650" />
+			<div>
+			<img src="{{ site.alipay }}"  alt="使用支付宝方式" />
+			</div>
 		</li>
 		{% endif %}
 		{% if site.wechatpay.size>0 %}
 		<li>
 			<span class="tag-name" id="wechat">「微信转账二维码方式」</span>
-			<img src="{{ site.wechatpay }}"  alt="使用微信转账二维码方式" width="650" />
+			<div>
+			<img src="{{ site.wechatpay }}"  alt="使用微信转账二维码方式" />
+			</div>
 		</li>
 		{% endif %}
 		{% if site.wechatcxpay.size>0 %}
 		<li>
 			<span class="tag-name" id="wechat-small-software">「微信赞赏码（小程序码型）方式」</span>
-			<img src="{{ site.wechatcxpay }}"  alt="使用微信赞赏码方式" width="650" />
+			<div>
+			<img src="{{ site.wechatcxpay }}"  alt="使用微信赞赏码方式" />
+			</div>
 		</li>
 		{% endif %}
 		{% if site.qqpay.size>0 %}
 		<li>
 			<span class="tag-name" id="qq">「QQ钱包转账二维码方式」</span>
-			<img src="{{ site.qqpay }}"  alt="使用QQ钱包转账二维码方式" width="650" />
+			<div>
+			<img src="{{ site.qqpay }}"  alt="使用QQ钱包转账二维码方式" />
+			</div>
 		</li>
 		{% endif %}
 		{% if site.cardpay.cardnumber.size>0 %}

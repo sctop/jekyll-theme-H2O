@@ -48,7 +48,6 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
         {% endfor %}
 		
 		{% if site.googleads.indexposts %}
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<ins class="adsbygoogle"
 			style="display:block"
 			data-ad-format="fluid"
@@ -100,28 +99,19 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                 {% endfor %}
             </section>
             {% endif %}
-            
-            {% if site.haolinks or site.putonglinks or site.zzlinks %}
-            <section class="tags-card">
-                <div class="link-title">友情链接</div>
-					<p>博客模板来源：<a target="_blank" href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">jekyllthemes.org - H2O模板</a></p>
-					<p>友情链接搬家啦！请单击这里访问到友情链接：<a target="_blank" href="/links.html">友情链接</a></p>
-				</div>
-			</section>
-			{% endif %}
 			
-			{% if site.googleads.index %}
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- 首页右侧广告 -->
-			<ins class="adsbygoogle"
-				style="display:block"
-				data-ad-client="ca-pub-9833352239491773"
-				data-ad-slot="3827396112"
-				data-ad-format="auto"></ins>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-			{% endif %}
+            {% if site.googleads.index %}
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 首页右侧广告 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-9833352239491773"
+                data-ad-slot="3827396112"
+                data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            {% endif %}
         </div>
 
         {% if site.search %}
