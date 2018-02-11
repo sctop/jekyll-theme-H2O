@@ -150,6 +150,7 @@ googleads:
   headposts: 'true' # 文章头部显示
   downposts: 'true' # 文章底部显示
   phonedbads: 'true' # （移动端可用）底部固定式覆盖弹窗
+  footerads: 'true' # 底部广告
 # --------------------------
 # 友情链接
 # 这里是优质友情链接
