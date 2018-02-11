@@ -138,6 +138,9 @@ bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段�
 360zzpt: 'e48fdf9149fc8979dcc34b91fa988767' # 为360站长平台（content片段），验证用
 360autolinks: true # 360自动提交链接
 
+# 赞赏
+zanshang: 'true'
+
 # 谷歌广告
 googleads:
   googleadson: 'true' # 启用广告？
