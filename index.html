@@ -47,7 +47,7 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                     <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
                 </footer>
             </article>
-			{% if site.paginate > 3 %}
+			{% if site.paginate > 1 and posts_for > 1 %}
 			    {% assign temp = posts_for | divided_by: 2.0 %}
 				{% assign temp2 = temp | floor %}
 		        {% if temp>temp2 and temp<temp+1 %}
