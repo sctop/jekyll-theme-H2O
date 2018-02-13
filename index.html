@@ -50,9 +50,13 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
 			{% if site.paginate > 3 %}
 			    {% assign temp = posts_for | divided_by: 2.0 %}
 				{% assign temp2 = temp | floor %}
-			    {% if posts_for != site.paginate and temp > temp2 and temp < temp+1 or temp > temp2-1 and temp < temp2 %}
+		        {% if temp>temp2 and temp<temp+1 %}
 				    {% break %}
-				{% else %}
+				{% endif %}
+				{% if temp>temp2-1 and temp<temp2 %}
+				    {% break %}
+				{% endif %}
+			    {% if posts_for != site.paginate %}
 				    <ins class="adsbygoogle"
 			            style="display:block"
 			            data-ad-format="fluid"
