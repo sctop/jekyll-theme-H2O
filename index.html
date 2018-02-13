@@ -48,7 +48,6 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                 </footer>
             </article>
 			{% if site.paginate > 2 and posts_for > 2 %}
-                {% assign exit_show = "noexit" %}
 			    {% assign temp = posts_for | divided_by: 2.0 %}
 				{% assign temp2 = temp | floor %}
 		        {% if temp>temp2 and temp<temp+1 %}
