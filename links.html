@@ -13,9 +13,17 @@ title: 友情链接
     <ul class="tags-list">
         <li>
             <p>博客模板来源：<a target="_blank" href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">jekyllthemes.org - H2O模板</a></p>
-            <p>本博客的友情链接分为三种：优质的友情链接、普普通通的友情链接、赞助（服务提供）商友情链接。</p>
-            <p>快速导航：<a href="#good-links" class="tag">优质的友情链接</a> | <a href="#no-good-links" class="tag">普普通通的友情链接</a> | <a href="#赞助（服务提供）商的友情链接" class="tag">赞助（服务提供）商的友情链接</a> | <a href="#404-site" class="tag">站点丢了</a> | <a href="#no-good-things" class="tag">举报不适合的内容</a></p>
+            <p>本博客的友情链接分为四种：博主自建网站、优质的友情链接、普普通通的友情链接、赞助（服务提供）商友情链接。</p>
+            <p>快速导航：{% if site.bzlinks %}<a href="bozhu-links" class="tag">博主自建网站</a> {% endif %}{% if site.haolinks %}| <a href="#good-links" class="tag">优质的友情链接</a> {% endif %}{% if site.putonglinks %}| <a href="#no-good-links" class="tag">普普通通的友情链接</a> {% endif %}{% if site.zzlinks %}| <a href="#赞助（服务提供）商的友情链接" class="tag">赞助（服务提供）商的友情链接</a> {% endif %}| <a href="#404-site" class="tag">站点丢了</a> | <a href="#no-good-things" class="tag">举报不适合的内容</a></p>
         </li>
+		{% if site.bzlinks %}
+		<li>
+		    <span class="tag-name" id="bozhu-links">「博主自建网站」</span>
+            {% for blogzhulinks in site.bozhulinks %}
+                <a target="_blank" class="tag" href="{{ blogzhulinks[1] }}">{{ blogzhulinks[0] }}</a>
+            {% endfor %}
+		</li>
+		{% endif %}
         <!--优质的友情链接-->
         {% if site.haolinks %}
         <li>
