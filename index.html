@@ -53,12 +53,13 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
 				{% assign temp2 = temp | floor %}
 		        {% if temp>temp2 and temp<temp+1 %}
 				    {% break %}
-                    {% assign exit_show = "exit" %}
+                    {% assign exit_for = "exit" %}
 				{% endif %}
 				{% if temp>temp2-1 and temp<temp2 %}
 				    {% break %}
-                    {% assign exit_show = "exit" %}
+                    {% assign exit_for = "exit" %}
 				{% endif %}
+                {% assign exit_for = "noexit" %}
 			    {% if posts_for != site.paginate and exit_for != "exit" %}
 				    <ins class="adsbygoogle"
 			            style="display:block"
