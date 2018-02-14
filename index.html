@@ -16,10 +16,8 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
 
 <main class="g-container home-content">
     <div class="article-list">
-        {% increment posts_for %}
         {% for post in paginator.posts %}
             <article class="article-item">
-			    {% increment posts_for %}
                 {% if post.cover %}
                 <div class="post-cover">
                     <a class="post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
@@ -46,28 +44,7 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                     </div>
                     <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
                 </footer>
-            </article>
-			{% if site.paginate > 2 and posts_for > 2 %}
-			    {% assign temp = posts_for | divided_by: 2.0 %}
-				{% assign temp2 = temp | floor %}
-		        {% if temp>temp2 and temp<temp+1 %}
-                    {% assign exit_for = "exit" %}
-				    {% break %}
-				{% elsif temp>temp2-1 and temp<temp2 %}
-                    {% assign exit_for = "exit" %}
-				    {% break %}
-			    {% else %}
-				    <ins class="adsbygoogle"
-			            style="display:block"
-			            data-ad-format="fluid"
-			            data-ad-layout-key="-fg+4m+ac-en-5l"
-			            data-ad-client="ca-pub-9833352239491773"
-			            data-ad-slot="3283458874"></ins>
-		            <script>
-			            (adsbygoogle = window.adsbygoogle || []).push({});
-		            </script>
-				{% endif %}
-			{% endif %}
+	    </article>
         {% endfor %}
 		
 		{% if site.googleads.indexposts %}
