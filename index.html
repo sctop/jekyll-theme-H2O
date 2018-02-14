@@ -48,18 +48,15 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
                 </footer>
             </article>
 			{% if site.paginate > 2 and posts_for > 2 %}
-		        {% assign exit_for = "noexit" %}
 			    {% assign temp = posts_for | divided_by: 2.0 %}
 				{% assign temp2 = temp | floor %}
 		        {% if temp>temp2 and temp<temp+1 %}
                     {% assign exit_for = "exit" %}
 				    {% break %}
-				{% endif %}
-				{% if temp>temp2-1 and temp<temp2 %}
+				{% elsif temp>temp2-1 and temp<temp2 %}
                     {% assign exit_for = "exit" %}
-				    {% break %}
-				{% endif %}
-			    {% if posts_for != site.paginate and exit_for != "exit" %}
+				    {% break %}
+			    {% else %}
 				    <ins class="adsbygoogle"
 			            style="display:block"
 			            data-ad-format="fluid"
