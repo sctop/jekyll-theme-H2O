@@ -122,7 +122,7 @@ encoding: UTF-8
 mp: '' # 联系手机号
 phone: '' # 联系座机
 qq: '2094880085' # 联系QQ
-mail: '2094880085@qq.com' # 联系邮箱
+mail: 'feedback@zhangqirun.cn' # 联系邮箱
 
 # 统计&管理网站
 # 网站备案后请立即填写ICP备案并且立即查看ICP备案是否在底部并且能否链接到工信部官网
