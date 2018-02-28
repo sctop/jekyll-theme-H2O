@@ -144,13 +144,13 @@ zanshang: 'true'
 # 谷歌广告
 googleads:
   googleadson: 'false' # 启用广告？
-  tqads: 'true' # 弹窗内广告
-  index: 'true' # （电脑端可用）首页右侧
-  indexposts: 'true' # 首页文章排列下方
-  headposts: 'true' # 文章头部显示
-  downposts: 'true' # 文章底部显示
-  phonedbads: 'true' # （移动端可用）底部固定式覆盖弹窗
-  footerads: 'true' # 底部广告
+  tqads: 'false' # 弹窗内广告
+  index: 'false' # （电脑端可用）首页右侧
+  indexposts: 'false' # 首页文章排列下方
+  headposts: 'false' # 文章头部显示
+  downposts: 'false' # 文章底部显示
+  phonedbads: 'false' # （移动端可用）底部固定式覆盖弹窗
+  footerads: 'false' # 底部广告
 # --------------------------
 # 友情链接
 # 这里是优质友情链接
