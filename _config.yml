@@ -118,6 +118,9 @@ timezone: Asia/Shanghai
 # 强制限制
 encoding: UTF-8
 
+# mathjax数学公式插件
+mathjax: true
+
 # 联系方式
 mp: '' # 联系手机号
 phone: '' # 联系座机
