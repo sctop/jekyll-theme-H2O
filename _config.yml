@@ -118,6 +118,9 @@ timezone: Asia/Shanghai
 # 强制限制
 encoding: UTF-8
 
+# 关闭网站
+close: true
+
 # mathjax数学公式插件
 mathjax: true
 
