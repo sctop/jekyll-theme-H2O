@@ -433,6 +433,8 @@ social-share: true # 开启或者关闭分享功能
 social-share-items: ['wechat', 'weibo', 'douban','twitter']
 ```
 
+参数：qq wechat tencent douban qzone  linkedin diandian facebook twitter google
+
 ### Contribution 贡献
 
 Any types of contribution are welcome. Thanks.
