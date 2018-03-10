@@ -1,16 +1,18 @@
 ---
 layout: default
 header-img: "assets/img/hero.jpg"
-description: "Sorry, Website is close now. :("
+description: "Sorry, the webmaster doesn't want you to see this. :("
 ---
 
 {% include header.html %}
 
 <header class="g-banner np-banner {{ site.postPatterns | prepend: 'post-pattern-' }}" data-theme="{{ site.theme-color }}">
     <div class="post-wrapper">
-        <h1>404</h1>
+        <h1>403</h1>
         <span class="subheading">{{ page.description }}</span>
-        <span class="subheading">Please waiting web-admin open site.</span>
+        <span class="subheading">If you see this page, maybe:</span>
+		<span class="subheading">1.The page you want to see is locked.</span>
+		<span class="subheading">2.Web sites are being maintained (such as fixing bug, adding things)</span>
         <a href="{{ site.nav.home }}" class="btn">Back to home</a>
     </div>
 </header>
