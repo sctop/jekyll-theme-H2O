@@ -1,3 +1,7 @@
+{% if site.b2t %}
+  {% include b2t.html %}
+{% endif %}
+
 <footer class="g-footer">
     <section>除特别注明外，否则博客中的内容将采用<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。</section>
     <section>{{ site.title }}{% if site.dbxsxx %} - {{ site.home-description }}{% endif %} © {{ site.startyear }} - {{ site.time | date: '%Y' }}  {% if site.cnzztj %}<script src="https://s13.cnzz.com/z_stat.php?id=1271703809&web_id=1271703809" language="JavaScript"></script>{% endif %}</section><section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O | <a href="{{ site.codeurl }}">我的博客源代码</a></section>

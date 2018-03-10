@@ -31,22 +31,10 @@
     <!--必应网站管理-->
     <meta name="msvalidate.01" content="{{ site.bingtj }}" />
 	
-	<!--Google Ads是否开启/底部横向弹窗-->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    {% if site.googleads.googleadson %}
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9833352239491773",
-        enable_page_level_ads: true
-    });
-    </script>
-    {% endif %}
-    {% if site.googleads.phonedbads %}
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9833352239491773",
-        enable_page_level_ads: true
-    });
-    </script>
-    {% endif %}
+	{% include googleads-head %}
+	
+	{% if site.mathjax %}
+	{% include mathjax.html %}
+	{% endif %}
+    {% include anchor.html %}
 </head>

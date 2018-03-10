@@ -70,10 +70,21 @@ search: true
 # Night mode  夜间模式
 nightMode: true
 
-# Comments  评论（disqus，需要翻墙）
-# disqus开启关闭 disqus_url评论js地址
-disqus: false
-disqus_url: ''
+# Comments 评论功能
+#   default_hidden：是否默认隐藏评论。若是则需要点击一按钮后才显示。 by Ray-Eldath
+comments:
+  default_hidden: true
+  disqus: false
+  disqus_url: ''
+
+  livere: true
+  livere_uid: MTAyMC8zMzc5Ni8xMDM0OQ==
+# --------
+# b2t 回到顶部 by Ray-Eldath
+b2t: true
+
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
 
 # Share  分享
 # 第一个是是否开启，第二个是分享的渠道
@@ -139,7 +150,10 @@ bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段�
 360autolinks: true # 360自动提交链接
 
 # 赞赏
-zanshang: 'true'
+# 这里使用的是<a>标签跳转，所以要填写link。赞助项目地址：https://github.com/sctop/subsidize
+zanshang:
+  open: true
+  link: 'https://zizhu.zhangqirun.cn/'
 
 # 谷歌广告
 googleads:
