@@ -135,9 +135,7 @@
         {% endif %}
 		
         </div>
-    </section>
-	
-	{% if site.comments.default_hidden %}
+		{% if site.comments.default_hidden %}
 		<section class="post-footer-item comment">
         <button class="comment-button" type="button">
             <i class="fa fa-commenting" aria-hidden="true"></i>
@@ -153,6 +151,8 @@
             {% if site.comments.livere %}
             <div id="lv-container" data-id="city" data-uid="{{ site.comments.livere_uid }}">
             {% endif %}
+	
+    </section>
 	
 	<!--默认隐藏评论吗？-->
 	{% if site.comments.default_hidden %}
