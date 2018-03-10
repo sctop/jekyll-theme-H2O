@@ -150,10 +150,12 @@ bingtj: '60C8EBAF57EF518899B5C5D16D8D2ADB' # 必应网站管理（content片段�
 360autolinks: true # 360自动提交链接
 
 # 赞赏
-# 这里使用的是<a>标签跳转，所以要填写link。赞助项目地址：https://github.com/sctop/subsidize
+# 这里使用的是<a>标签跳转，所以要填写link。赞助项目地址：https://github.com/sctop/subsidize/ 
+# open是启用/不启用（默认true启用） link是跳转地址 info是指当鼠标停留在图标上时显示的
 zanshang:
   open: true
   link: 'https://zizhu.zhangqirun.cn/'
+  info: '真诚赞赏 手有余香'
 
 # 谷歌广告
 googleads:
