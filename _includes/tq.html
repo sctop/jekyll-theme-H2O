@@ -11,6 +11,14 @@ img.logo{width:14px;height:14px;margin:0 5px 0 3px;}
         <h4 class="modal-title" id="myModalLabel">{{ site.title }}</h4>
       </div>
        <div class="modal-body">
+           {% if site.close %}
+           <p>This site is close now. 此网站目前已经关闭。</p>
+           <p>Now you in the 403.html. 现在你在403页面上。</p>
+           <p>Please waiting website-admin open this site. 请等待网站管理员打开此网站。</p>
+           {% elsif site.never %}
+           <p>Very sorry! This site is never open! 非常抱歉！此网站已经永远关闭了！</p>
+           <p>You can't enter this site. 你不能进入此站点。</p>
+           {% else %}
 	        <p>欢迎来到童年是个风筝的博客！</p>
 	        <p>本博客为非盈利网站，在<a target="_blank" href="https://pages.github.com/">GitHub Pages</a>上用开源的静态模板<a target="_blank" href="https://github.com/kaeyleo/jekyll-theme-H2O">H2O</a>。</p>
 	        <p>切换到<a href="https://www.zhangqirun.cn/">更安全的博客</a></p>
@@ -36,8 +44,8 @@ img.logo{width:14px;height:14px;margin:0 5px 0 3px;}
 	        <br>本网站编译时间：{{ site.time }}</br>
             <!--广告-->
             <hr />
-            <br>本广告来自于Google</br>
             {% if site.googleads.tqads %}
+            <br>本广告来自于Google</br>
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- 弹窗广告 -->
             <ins class="adsbygoogle"
@@ -50,7 +58,8 @@ img.logo{width:14px;height:14px;margin:0 5px 0 3px;}
             </script>
             {% endif %}
 			<hr />
-	    <button type="button" class="btn btn-default" data-dismiss="modal">知道啦</button>
+    {% endif %}
+	    <button type="button" class="btn btn-default" data-dismiss="modal">I know! 知道啦！</button>
        </div>
     </div>
   </div>
