@@ -1,7 +1,7 @@
 ---
 layout: default
 header-img: "assets/img/hero.jpg"
-description: "Sorry, the webmaster doesn't want you to see this. :("
+description: "抱歉，网站管理员并不想让你看到你想看的 :("
 ---
 
 {% include header.html %}
@@ -10,9 +10,9 @@ description: "Sorry, the webmaster doesn't want you to see this. :("
     <div class="post-wrapper">
         <h1>403</h1>
         <span class="subheading">{{ page.description }}</span>
-        <span class="subheading">If you see this page, maybe:</span>
-		<span class="subheading">1.The page you want to see is locked.</span>
-		<span class="subheading">2.Web sites are being maintained (such as fixing bug, adding things)</span>
-        <a href="{{ site.nav.home }}" class="btn">Back to home</a>
+        <p>如果你看见此页面，也许是这些情况：</p>
+        <p>1.你想看的页面被管理员强制转向了此页面（也就是它被锁了）。<p>
+        <p>2.网站正在维护中。</p>
+        <a href="{{ site.nav.home }}" class="btn">回到主页</a>
     </div>
 </header>
