@@ -264,7 +264,7 @@ a{color:#4e4e4e;text-decoration:none;cursor:pointer;transition:.2s}::selection{b
   .home-banner .header-img{width:695px;left:-100px}
 }
 /*这里设定评论框class不会溢出掉*/
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
 .comment-inner {width: auto} 
 }
 .comment-inner{margin:0 auto;width:720px}
