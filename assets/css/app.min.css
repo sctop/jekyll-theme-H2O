@@ -1268,6 +1268,13 @@ a{
   width: 720px;
 }*/
 @media screen and (min-width: 721px) {
-.comment-inner {width: 720px} 
+  .comment-inner {
+    width: 720px
+  } 
 }
+@media screen and (max-width: 721px) { 
+  .abc {
+    width: auto
+  } 
+} 
 
