@@ -1268,5 +1268,5 @@ a{
 .comment-inner{
   margin:0 auto;
   /*width: auto;*/
-  max-width: 720px;
+  width: 720px auto;
 }
