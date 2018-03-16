@@ -1267,5 +1267,6 @@ a{
 }
 .comment-inner{
   margin:0 auto;
-  width: auto;
+  /*width: auto;*/
+  max-width: 720px;
 }
