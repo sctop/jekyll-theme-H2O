@@ -132,7 +132,7 @@ encoding: UTF-8
 # 网站状态
 # 一次只能true一个，否则会有异常
 # close网站暂时关闭 never网站永远关闭 newsite_url是配置never后的新网址
-close: true
+close: false
 never: false
 newsite_url: ''
 
