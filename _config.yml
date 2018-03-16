@@ -89,7 +89,7 @@ mathjax: true
 # Share  分享
 # 第一个是是否开启，第二个是分享的渠道
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: ['weibo', 'qq', 'tencent', 'douban', 'qzone', 'linkedin', 'diandian', 'facebook', 'twitter', 'google']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default  粉色或者默认（蓝色）
