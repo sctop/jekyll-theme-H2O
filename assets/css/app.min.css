@@ -1261,12 +1261,12 @@ a{
 }
 */
 
-/*这里设定评论框class不会溢出掉*/
+/*这里设定评论框class不会溢出掉
 .comment-inner{
   margin:0 auto;
   /*width: auto;*/
   width: 720px;
-}
+}*/
 @media screen and (min-width: 721px) {
 .comment-inner {width: 720px} 
 }
