@@ -1251,3 +1251,8 @@ a{
     left:-100px
   }
 }
+
+/*comment div setting*/
+.comment-inner{
+  max-width: 720px;
+}
