@@ -10,12 +10,12 @@ description: "抱歉，此站点已经永远关闭了 X("
     <div class="post-wrapper">
         <h1>?????</h1>
         <span class="subheading">{{ page.description }}</span>
-        <span class="subheading">如果你看见这个页面</span>
-        <span class="subheading">那么就表明这个网站已经永久关闭了！</span>
+        <p>如果你看见这个页面</p>
+        <p>那么就表明这个网站已经永久关闭了！</p>
 	{% if site.newsite_url.size>0 %}
-        <a href="{{ site.newsite_rul }}" class="btn">去看看新站点</a>
+	    <p><a href="{{ site.newsite_rul }}" class="btn">去看看新站点</a></p>
 	{% else %}
-	<a href="https://www.baidu.com/" class="btn">去百度看看其它的吧...</a>
+	    <p><a href="https://www.baidu.com/" class="btn">去百度看看其它的吧...</a></p>
 	{% endif %}
     </div>
 </header>
