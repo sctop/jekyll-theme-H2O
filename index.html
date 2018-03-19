@@ -100,8 +100,9 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
             </section>
             {% endif %}
         </div>
-			
-            <div class="g-sidebar">
+	</aside>
+	<aside class="g-sidebar-wrapper">
+        <div class="g-sidebar">
 			{% if site.bzlinks %}
 			<section class="tag-card">
 				<div class="links-card-name">博主自建网站</div>	
@@ -113,8 +114,10 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
 			</section>
 			{% endif %}
         </div>
-        
-			<div class="g-sidebar">
+	</aside>
+	
+    <aside class="g-sidebar-wrapper">
+		<div class="g-sidebar">
             {% if site.googleads.index %}
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- 首页右侧广告 -->
@@ -126,8 +129,11 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-            {% endif %}
+		    {% else %}
+				<p>AD Error now.</p>
+			{% endif %}
         </div>
+	</aside>
 
         {% if site.search %}
         <div class="search-card">
@@ -136,8 +142,6 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
             <div class="search_result"></div>
         </div>
         {% endif %}
-
-    </aside>
 
 </main>
 
