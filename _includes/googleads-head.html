@@ -1,18 +1,26 @@
 <!--Google Ads是否开启/底部横向弹窗-->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    {% if site.googleads.googleadson %}
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{% if site.googleads.googleadson %}
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-9833352239491773",
         enable_page_level_ads: true
     });
-    </script>
-    {% endif %}
-    {% if site.googleads.phonedbads %}
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9833352239491773",
-        enable_page_level_ads: true
+</script>
+{% endif %}
+{% if site.googleads.phonedbads %}
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9833352239491773",
+    enable_page_level_ads: true
     });
-    </script>
-    {% endif %}
+</script>
+{% endif %}
+{% if site.googleads.auto_ad %}
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9833352239491773",
+          enable_page_level_ads: true
+     });
+</script>
+{% endif %}
