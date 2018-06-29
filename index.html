@@ -1,7 +1,7 @@
 ---
 layout: default
 home-title: '童年是个风筝的博客'
-home-description: '省钱省心好生活'
+home-description: '保持你的决心！'
 ---
 
 {% include header.html %}
@@ -38,7 +38,7 @@ home-description: '省钱省心好生活'
                     <div class="post-tags">
                         {% if post.tags.size > 0 %}
                             {% for tag in post.tags  %}
-                            <a href={{ "tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
+                            <a href={{ "/tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
                             {% endfor %}
                         {% endif %}
                     </div>
