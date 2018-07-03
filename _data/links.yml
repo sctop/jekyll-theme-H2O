@@ -1,0 +1,38 @@
+# 友情链接
+# 这里是优质友情链接
+haolinks: true
+goodlinks:
+  博客模板支持: 'http://jekyllthemes.org'
+  Liquid（jekyll）模板的食用方法(⌒▽⌒): 'https://liquid.bootcss.com/'
+  Jekyll中文翻译版教程: 'http://jekyllcn.com/'
+  Jekyll原版教程: 'https://jekyllrb.com/'
+  Townwang的博客: 'https://townwang.com/'
+  Tea9的博客: 'https://tea9.github.io/'
+# ---分界线---
+# 这里是普通友情链接（相对于优质的友情链接较低级一些的）
+putonglinks: true
+ptlinks:
+  空白代刷站: 'http://likebuying.top/'
+  空白君的博客: 'http://kbboke.xyz/'
+  fttidc主机: 'http://fttidc.com/'
+# ---分界线---
+# 这里是提供服务的赞助（服务提供）商。
+zzlinks: true
+zanzhulinks:
+  腾讯云: 'https://cloud.tencent.com/'
+  CloudFlare云服务: 'https://www.cloudflare.com/'
+# ---分界线---
+# 这里是博主开办的网页
+bzlinks: true
+bozhulinks:
+  博主开发的软件的下载站: 'https://microsoft.zhangqirun.cn/'
+  资助: 'https://zizhu.zhangqirun.cn/'
+  下载内容缓存: 'https://down.zhangqirun.cn/'
+  旧博客: 'https://blog.zhangqirun.cn/'
+  空白君旧博客缓存: 'https://kb.zhangqirun.cn/'
+# ---分界线---
+# 这里是友情链接网站正在维修的
+errorlinks: false
+siteerrorlinks:
+  No any things: 'NO-ANY-THINGS'
+# ---分界线---

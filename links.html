@@ -6,7 +6,7 @@ title: 友情链接
 {% include header.html %}
 
 <div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
-    <h2>友情链接</h2>
+    <h2>{{ page.title }}</h2>
 </div>
 
 <main class="tags-content">
@@ -14,41 +14,50 @@ title: 友情链接
         <li>
             <p>博客模板来源：<a target="_blank" href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">jekyllthemes.org - H2O模板</a></p>
             <p>本博客的友情链接分为四种：博主自建网站、优质的友情链接、普普通通的友情链接、赞助（服务提供）商友情链接。</p>
-            <p>快速导航：{% if site.bzlinks %}<a href="bozhu-links" class="tag">博主自建网站</a> {% endif %}{% if site.haolinks %}| <a href="#good-links" class="tag">优质的友情链接</a> {% endif %}{% if site.putonglinks %}| <a href="#no-good-links" class="tag">普普通通的友情链接</a> {% endif %}{% if site.zzlinks %}| <a href="#赞助（服务提供）商的友情链接" class="tag">赞助（服务提供）商的友情链接</a> {% endif %}| <a href="#404-site" class="tag">站点丢了</a> | <a href="#no-good-things" class="tag">举报不适合的内容</a></p>
+            <p>快速导航：
+			{% if site.data.links.bzlinks %}<a href="bozhu-links" class="tag">博主自建网站</a> {% endif %}
+			{% if site.data.links.haolinks%}| <a href="#good-links" class="tag">优质的友情链接</a> {% endif %}
+			{% if site.data.links.putonglinks %}| <a href="#no-good-links" class="tag">普普通通的友情链接</a> {% endif %}
+			{% if site.data.links.zzlinks %}| <a href="#赞助（服务提供）商的友情链接" class="tag">赞助（服务提供）商的友情链接</a> {% endif %}
+		    | 
+			<a href="#404-site" class="tag">站点丢了</a>
+			| 
+			<a href="#no-good-things" class="tag">举报不适合的内容</a>
+			</p>
         </li>
-		{% if site.bzlinks %}
+		{% if site.data.links.bzlinks %}
 		<li>
 		    <span class="tag-name" id="bozhu-links">「博主自建网站」</span>
-            {% for blogzhulinks in site.bozhulinks %}
+            {% for blogzhulinks in site.data.links.bozhulinks %}
                 <a target="_blank" class="tag" href="{{ blogzhulinks[1] }}">{{ blogzhulinks[0] }}</a>
             {% endfor %}
 		</li>
 		{% endif %}
         <!--优质的友情链接-->
-        {% if site.haolinks %}
+        {% if site.data.links.haolinks%}
         <li>
             <span class="tag-name" id="good-links">「优质的友情链接」</span>
-            {% for hlinks in site.goodlinks %}
+            {% for hlinks in site.data.links.goodlinks %}
                 <a target="_blank" class="tag" href="{{ hlinks[1] }}">{{ hlinks[0] }}</a>
             {% endfor %}
         </li>
         </div>
         {% endif %}
         <!--普普通通的友情链接-->
-        {% if site.putonglinks %}
+        {% if site.data.links.putonglinks %}
         <li>
             <span class="tag-name" id="no-good-links">「普普通通的友情链接」</span>
-            {% for ptlink in site.ptlinks %}
+            {% for ptlink in site.data.links.ptlinks %}
                 <a target="_blank" href="{{ ptlink[1] }}" class="tag">{{ ptlink[0] }}</a>
             {% endfor %}
         </li>
         </div>
         {% endif %}
         <!--赞助（服务提供）商-->
-        {% if site.zzlinks %}
+        {% if site.data.links.zzlinks %}
         <li>
             <span class="tag-name" id="赞助（服务提供）商的友情链接">「赞助（服务提供）商的友情链接」</span>
-            {% for zanzhushanglinks in site.zanzhulinks %}
+            {% for zanzhushanglinks in site.data.links.zanzhulinks %}
                 <a target="_blank" href="{{ zanzhushanglinks[1] }}" class="tag">{{ zanzhushanglinks[0] }}</a>
             {% endfor %}
         </li>
@@ -63,24 +72,9 @@ title: 友情链接
             {% if site.qq.size>0 or site.mail.size>0 or site.mp.size>0 or site.phone.size>0 %}
                 <h4 id="联系站长">2、联系站长</h4>
                 <p>添加完之后，站长大大不可能会立刻注意到你的网站的变动。所以你需要自己联系站长大大以让Ta注意到你哦！</p>
-                <p>站长大大目前支持的联系方式（QQ或者邮箱更好哦）：</p>
-            {% if site.qq.size>0 %}
-                <p>QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/assets/icons/qq_lianxiwomen.gif" alt="联系站长添加友情链接" title="联系站长添加友情链接"/></a></p>
-            {% endif %}
-            {% if site.mail.size>0 %}
-                <p>邮箱：<a target="_blank" href="mailto:{{ site.mail }}">{{ site.mail }}</a></p>
-            {% endif %}
-            {% if site.mp.size==11 %}
-                <!--11位手机号属于中国大陆标准手机号，大陆通用-->
-                <p>手机：<a href="tel:{{ site.mp }}">{{ site.mp }}</a></p>
-            {% endif %}
-            {% if site.phone.size>0 %}
-                <!--这里填写的是座机电话（相对于手机较为不经常变化位置的，即号码为0799-555555的类似内容）-->
-                <p>座机：<a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
-            {% endif %}
+                <p>联系站长转至<a target="_blank" href="/about.html#call">这里</a></p>
         </li>
         </div>
-            {% endif %}
         <li>
             <h2 align="center" id="no-good-things">友情链接出现了不适内容？</h2>
             <p>请通过邮箱或者QQ告知站长{{ site.author }}，切记千万不要口头告知，一定要在QQ或邮件里头写清楚。</p>
