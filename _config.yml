@@ -48,6 +48,7 @@ home-description: 'zhangqirun.cn，更易识别，权重更高'
 # /links.html 和 /feed.xml 请勿添加到这里！
 nav:
   home: '/'
+  about: '/about.html'
   tags: '/tags.html'
   VistalStudio: '/VisualStudio2017.html'
   
