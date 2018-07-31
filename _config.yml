@@ -50,6 +50,7 @@ nav:
   home: '/'
   about: '/about.html'
   tags: '/tags.html'
+  info: '/info-of-site.html'
   VistalStudio: '/VisualStudio2017.html'
   
 # RSS订阅
