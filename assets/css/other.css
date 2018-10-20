@@ -12,11 +12,3 @@ code[class*="language-"], pre[class*="language-"]
 {
 	background-color: #2d313a
 }
-.highlight pre, pre, .highlight .hll
-{
-	background-color: #2d313a
-}
-.highlighter-rouge>.highlight>.highlight
-{
-	background-color: #f5f5f5
-}
