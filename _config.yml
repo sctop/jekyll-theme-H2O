@@ -1,4 +1,4 @@
-# 此页内容已被童年是个风筝（sctop）更新过
+﻿# 此页内容已被童年是个风筝（sctop）更新过
 # 原内容请自行fork原项目：https://github.com/kaeyleo/jekyll-theme-H2O
 
 # --------------------------------------------------------------------------
@@ -58,7 +58,7 @@ RSS: true
 
 # Author 配置博主信息
 # author真名 nickname小名 bio简介 avatar头像 old年龄 from来自于哪里（最好写清楚省份城市）
-author: 'sctop'
+author: '童年是个风筝'
 nickname: '宝仔'
 bio: '广东省河源市深河中学七年级的中学生一名，热爱写博客&搞东西。爱PR，爱P原合同，爱b站和many things。现在致力于写Python程序。'
 avatar: '/assets/img/profile.jpg'
